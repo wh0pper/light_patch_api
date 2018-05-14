@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2018_05_14_163235) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "configurations", force: :cascade do |t|
+  create_table "states", force: :cascade do |t|
     t.boolean "active"
     t.string "mode"
     t.string "color"

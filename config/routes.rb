@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :states
+
+  get 'active_state', to: 'states#active_state', as: :active_state
 end
