@@ -12,10 +12,23 @@ require "action_view/railtie"
 require "action_cable/engine"
 # require "sprockets/railtie"
 # require "rails/test_unit/railtie"
+require 'apa102_rbpi'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+
+Apa102Rbpi.configure do |c|
+  c.num_leds = 100
+  c.led_frame_rgb_offsets = {
+    red: 3,
+    blue: 2,
+    green: 1
+  }
+  c.brightness = 31
+  c.spi_hz = 8000000
+  c.simulate = true
+end
 
 module LightPatchApi
   class Application < Rails::Application
