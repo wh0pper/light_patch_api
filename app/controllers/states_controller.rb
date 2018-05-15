@@ -1,13 +1,13 @@
 class StatesController < ApplicationController
 
   def index
-    @configs = State.all
-    render json: @configs, status: :ok
+    configs = State.all
+    render json: configs, status: :ok
   end
 
   def update
-    @state = State.find(params[:id])
-    if @state.update!(state_params)
+    state = State.find(params[:id])
+    if state.update!(state_params)
       render status: 200, json: {
         message: "State updated"
       }
@@ -15,7 +15,7 @@ class StatesController < ApplicationController
   end
 
   def test_blink
-    @state = State.where(active: true).first
+    state = State.where(active: true).first
     Thread.new do
       strip = Apa102Rbpi.strip
       loop do
@@ -25,20 +25,20 @@ class StatesController < ApplicationController
         sleep 1
       end
     end
-    render json: @state
+    render json: state
   end
 
   def test_show
-    @state = State.where(active: true).first
+    state = State.where(active: true).first
     strip = Apa102Rbpi.strip
     strip.set_all_pixels!(0xf442df)
-    render json: @state
+    render json: state
   end
 
 
   def active_state
-    @state = State.where(active: true).first
-    render json: @state, status: :ok
+    state = State.where(active: true).first
+    render json: state, status: :ok
   end
 
   private
