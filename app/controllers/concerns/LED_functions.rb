@@ -1,6 +1,11 @@
 module LEDFunctions
   @@threads = []
 
+  def self.render(state)
+    self.thread_check
+    strip = Apa102Rbpi.strip
+    strip.set_all_pixels!(state.color)
+  end
 
   def self.blink
     self.thread_check

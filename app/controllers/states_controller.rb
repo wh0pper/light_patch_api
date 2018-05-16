@@ -7,6 +7,7 @@ class StatesController < ApplicationController
 
   def update
     state = State.find(params[:id])
+    LEDFunctions.render(state)
     if state.update!(state_params)
       render status: 200, json: {
         message: "State updated"
@@ -20,7 +21,7 @@ class StatesController < ApplicationController
     render json: state
   end
 
-  def test_show
+  def show_color
     state = State.where(active: true).first
     LEDFunctions.one_color(0xf442df)
     render json: state
