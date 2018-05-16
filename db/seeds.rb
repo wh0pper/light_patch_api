@@ -1,21 +1,24 @@
 states =  [
   {
     "active": true,
-    "mode": "color_wheel",
-    "color": "red",
-    "brightness": 0.7
+    "name": "Rainbow",
+    "mode": "transition",
+    "color": "0xff0000",
+    "brightness": 0.75
   },
   {
     "active": false,
+    "name": "Lounge",
     "mode": "responsive",
-    "color": "purple",
-    "brightness": 1.0
+    "color": "0x8138f7",
+    "brightness": 1.00
   },
   {
     "active": false,
-    "mode": "wake-up",
-    "color": "orange",
-    "brightness": 0.3
+    "name": "Wake up",
+    "mode": "pulse",
+    "color": "0xffa100",
+    "brightness": 0.30
   }
 ]
 
@@ -25,6 +28,7 @@ State.destroy_all
 states.each do |x|
   State.create!(
     active: x[:active],
+    name: x[:name],
     mode: x[:mode],
     color: x[:color],
     brightness: x[:brightness]
