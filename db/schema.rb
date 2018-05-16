@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 2018_05_14_163235) do
 
   create_table "states", force: :cascade do |t|
     t.boolean "active"
+    t.string "name"
     t.string "mode"
     t.string "color"
-    t.decimal "brightness", precision: 2
+    t.decimal "brightness", precision: 3, scale: 2
   end
 
 end
