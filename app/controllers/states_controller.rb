@@ -8,6 +8,7 @@ class StatesController < ApplicationController
   def create
     State.all.each { |state| state.update!(active: false) }
     new_state = State.create!(state_params)
+    LEDFunctions.render(new_state)
     render json: new_state, status: 201, message: "New state created."
   end
 
@@ -43,7 +44,7 @@ class StatesController < ApplicationController
   # end
 
   def active_state
-    state = State.where(active: true).first
+    state  = State.where(active: true).first ?  State.where(active: true).first : State.first
     render json: state, status: :ok
   end
 
