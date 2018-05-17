@@ -8,7 +8,6 @@ class StatesController < ApplicationController
   def create
     State.all.each { |state| state.update!(active: false) }
     new_state = State.create!(state_params)
-    binding.pry
     render json: new_state, status: 201, message: "New state created."
   end
 
