@@ -16,7 +16,16 @@ class StatesController < ApplicationController
     LEDFunctions.render(state)
     if state.update!(state_params)
       render status: 200, json: {
-        message: "State updated"
+        message: "State updated."
+      }
+    end
+  end
+
+  def destroy
+    state = State.find(params[:id])
+    if state.destroy
+      render status: 204, json: {
+        message: "State removed."
       }
     end
   end
