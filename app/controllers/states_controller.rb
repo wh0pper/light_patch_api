@@ -5,6 +5,11 @@ class StatesController < ApplicationController
     render json: configs, status: :ok
   end
 
+  def show
+    state = State.find(params[:id])
+    render json: state, status: :ok
+  end
+
   def create
     State.all.each { |state| state.update!(active: false) }
     new_state = State.create!(state_params)
@@ -30,18 +35,18 @@ class StatesController < ApplicationController
       }
     end
   end
-  #
-  # def test_blink
-  #   state = State.where(active: true).first
-  #   LEDFunctions.blink
-  #   render json: state
-  # end
-  #
-  # def show_color
-  #   state = State.where(active: true).first
-  #   LEDFunctions.one_color(0xf442df)
-  #   render json: state
-  # end
+
+  def test_blink
+    state = State.where(active: true).first
+    LEDFunctions.blink
+    render json: state
+  end
+
+  def show_color
+    state = State.where(active: true).first
+    LEDFunctions.one_color(0xf442df)
+    render json: state
+  end
 
   def active_state
     state  = State.where(active: true).first ?  State.where(active: true).first : State.first
