@@ -17,15 +17,17 @@ class StatesController < ApplicationController
   #   render json: new_state, status: 201, message: "New state created."
   # end
   #
-  # def update
-  #   state = State.find(params[:id])
-  #   LEDFunctions.render(state)
-  #   if state.update!(state_params)
-  #     render status: 200, json: {
-  #       message: "State updated."
-  #     }
-  #   end
-  # end
+  def update
+    state = State.find(params[:id])
+    # LEDFunctions.render(state)
+    # binding.pry
+    if state.update!(state_params)
+      LEDFunctions.one_color(state.color)
+      render status: 200, json: {
+        message: "State updated."
+      }
+    end
+  end
   #
   # def destroy
   #   state = State.find(params[:id])
@@ -52,12 +54,13 @@ class StatesController < ApplicationController
     state  = State.where(active: true).first ? State.where(active: true).first : State.first
     # binding.pry
     LEDFunctions.one_color(state.color)
+
     render json: state, status: :ok
   end
-  #
-  # private
-  # def state_params
-  #   params.permit(:active, :name, :mode, :color, :brightness)
-  # end
+
+  private
+  def state_params
+    params.permit(:active, :name, :mode, :color, :brightness)
+  end
 
 end
