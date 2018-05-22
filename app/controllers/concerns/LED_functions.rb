@@ -35,11 +35,10 @@ module LEDFunctions
   def self.one_color(color)
     self.thread_check
     strip = Apa102Rbpi.strip
-    strip.set_all_pixels!(color)
+    strip.set_all_pixels!(color.hex)
   end
 
   private
-
 
   def self.thread_check
     @@threads.each do |thread|
