@@ -5,6 +5,11 @@ class StatesController < ApplicationController
     render json: configs, status: :ok
   end
 
+  def show
+    state = State.find(params[:id])
+    render json: state, status: :ok
+  end
+
   def create
     State.all.each { |state| state.update!(active: false) }
     new_state = State.create!(state_params)
@@ -14,8 +19,8 @@ class StatesController < ApplicationController
 
   def update
     state = State.find(params[:id])
-    LEDFunctions.render(state)
     if state.update!(state_params)
+      LEDFunctions.one_color(state.color)
       render status: 200, json: {
         message: "State updated."
       }
@@ -30,7 +35,8 @@ class StatesController < ApplicationController
       }
     end
   end
-  #
+
+  # Actions written for testing purposes:
   # def test_blink
   #   state = State.where(active: true).first
   #   LEDFunctions.blink
@@ -44,7 +50,8 @@ class StatesController < ApplicationController
   # end
 
   def active_state
-    state  = State.where(active: true).first ?  State.where(active: true).first : State.first
+    state  = State.where(active: true).first ? State.where(active: true).first : State.first
+    LEDFunctions.one_color(state.color)
     render json: state, status: :ok
   end
 
