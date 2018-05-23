@@ -7,13 +7,13 @@ module LEDFunctions
     strip = Apa102Rbpi::Strip.new([0,50],
       {
         brightness: brightness
-      })
-    # strip.set_all_pixels!(state.color.gsub(/#/, '0x'))
+      }
+    )
     # will add cases beyond MVP to choose lighting modes
     # case state.mode
+    # when "blink"
     # when "transition"
     # when "pulse"
-    # when "blink"
     # when "solid"
     # else
     # end
