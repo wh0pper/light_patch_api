@@ -4,29 +4,31 @@ module LEDFunctions
   def self.render(state)
     self.thread_check
     brightness = state.brightness * 31
-    strip = Apa102Rbpi::Strip.new([0,50],
+    @strip = Apa102Rbpi::Strip.new([0,50],
       {
         brightness: brightness
       }
     )
     # will add cases beyond MVP to choose lighting modes
-    # case state.mode
-    # when "blink"
+    case state.mode
+    when "blink"
+      self.blink(state.color)
     # when "transition"
     # when "pulse"
     # when "solid"
-    # else
-    # end
+    else
+      self.one_color(state.color)
+    end
   end
 
-  def self.blink
+  def self.blink(color)
     self.thread_check
     @@threads << Thread.new do
-      strip = Apa102Rbpi.strip
+      # strip = Apa102Rbpi.strip
       loop do
-        strip.set_all_pixels!(0xffffff)
+        @strip.set_all_pixels!(color)
         sleep 1
-        strip.set_all_pixels!(0)
+        @strip.set_all_pixels!(0)
         sleep 1
       end
     end
@@ -34,8 +36,8 @@ module LEDFunctions
 
   def self.one_color(color)
     self.thread_check
-    strip = Apa102Rbpi.strip
-    strip.set_all_pixels!(color.hex)
+    # strip = Apa102Rbpi.strip
+    @strip.set_all_pixels!(color.hex)
   end
 
   private

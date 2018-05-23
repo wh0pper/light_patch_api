@@ -16,13 +16,12 @@ class StatesController < ApplicationController
   #   LEDFunctions.render(new_state)
   #   render json: new_state, status: 201, message: "New state created."
   # end
-  #
+
   def update
     state = State.find(params[:id])
-    # LEDFunctions.render(state)
-    # binding.pry
     if state.update!(state_params)
-      LEDFunctions.one_color(state.color)
+      LEDFunctions.render(state)
+      # LEDFunctions.one_color(state.color)
       render status: 200, json: {
         message: "State updated."
       }
@@ -52,7 +51,6 @@ class StatesController < ApplicationController
   #
   def active_state
     state  = State.where(active: true).first ? State.where(active: true).first : State.first
-    # binding.pry
     LEDFunctions.one_color(state.color)
 
     render json: state, status: :ok
