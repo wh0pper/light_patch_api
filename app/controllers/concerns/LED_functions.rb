@@ -9,14 +9,14 @@ module LEDFunctions
     when "blink"
       self.blink(state.color)
     when "solid"
-      puts self.one_color(state.color)
+      self.one_color(state.color)
     else
       puts 'no mode set'
     end
   end
 
   def self.blink(color)
-    @strip.clear
+    @strip.clear!
     @@threads << Thread.new do
       self.thread_check
       loop do
@@ -29,8 +29,9 @@ module LEDFunctions
   end
 
   def self.one_color(color)
+    @strip.clear!
     self.thread_check
-    @strip.set_all_pixels!(color.hex)
+    puts @strip.set_all_pixels!(color.hex)
   end
 
   private
