@@ -16,7 +16,11 @@ module LEDFunctions
   end
 
   def self.blink(color)
-    @strip.clear!
+    if @strip #safeguard for test routes, which don't go through render
+      @strip.clear!
+    else
+      @strip = Apa102Rbpi::Strip.new([0,75])
+    end
     @@threads << Thread.new do
       self.thread_check
       loop do
@@ -29,7 +33,11 @@ module LEDFunctions
   end
 
   def self.one_color(color)
-    @strip.clear!
+    if @strip #safeguard for test routes, which don't go through render
+      @strip.clear!
+    else
+      @strip = Apa102Rbpi::Strip.new([0,75])
+    end
     self.thread_check
     puts @strip.set_all_pixels!(color.hex)
   end
