@@ -1,0 +1,52 @@
+could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "database"=>"light_patch_api_development"}
+rails aborted!
+PG::ConnectionBad: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+/home/pi/.rvm/gems/ruby-2.4.1/gems/pg-1.0.0/lib/pg.rb:56:in `initialize'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/pg-1.0.0/lib/pg.rb:56:in `new'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/pg-1.0.0/lib/pg.rb:56:in `connect'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/connection_handling.rb:90:in `connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/postgresql_database_tasks.rb:12:in `connection'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/postgresql_database_tasks.rb:21:in `create'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/database_tasks.rb:119:in `create'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/database_tasks.rb:139:in `block in create_current'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/database_tasks.rb:316:in `block in each_current_configuration'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/database_tasks.rb:313:in `each'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/database_tasks.rb:313:in `each_current_configuration'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/tasks/database_tasks.rb:138:in `create_current'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/activerecord-5.2.0/lib/active_record/railties/databases.rake:29:in `block (2 levels) in <top (required)>'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb:23:in `block in perform'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb:20:in `perform'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/command.rb:48:in `invoke'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/railties-5.2.0/lib/rails/commands.rb:18:in `<top (required)>'
+/home/pi/Desktop/light_patch_api/bin/rails:9:in `require'
+/home/pi/Desktop/light_patch_api/bin/rails:9:in `<top (required)>'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+/home/pi/.rvm/gems/ruby-2.4.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+/home/pi/Desktop/light_patch_api/bin/spring:15:in `require'
+/home/pi/Desktop/light_patch_api/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
