@@ -27,7 +27,7 @@ Apa102Rbpi.configure do |c|
   }
   c.brightness = 31
   c.spi_hz = 8000000
-  c.simulate = true
+  c.simulate = false
 end
 
 module LightPatchApi
