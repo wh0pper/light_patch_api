@@ -1,0 +1,1362 @@
+bcm2835_init: Unable to open /dev/mem: Permission denied
+/var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/spi.rb:65: [BUG] Segmentation fault at 0xffffffff
+ruby 2.3.1p112 (2016-04-26) [arm-linux-gnueabihf]
+
+-- Control frame information -----------------------------------------------
+c:0035 p:---- s:0141 e:000140 CFUNC  :spi_begin
+c:0034 p:0020 s:0138 e:000137 METHOD /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/spi.rb:65
+c:0033 p:0011 s:0132 E:001140 METHOD /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/apa102.rb:47
+c:0032 p:0010 s:0129 e:000128 METHOD /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/strip.rb:54
+c:0031 p:0015 s:0126 e:000125 METHOD /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/strip.rb:119
+c:0030 p:0027 s:0123 e:000122 METHOD /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi.rb:12
+c:0029 p:0137 s:0120 e:000119 TOP    /home/whopper/Desktop/light_patch_api/config/application.rb:21 [FINISH]
+c:0028 p:---- s:0118 e:000117 CFUNC  :require_relative
+c:0027 p:0008 s:0114 e:000113 TOP    /home/whopper/Desktop/light_patch_api/Rakefile:4 [FINISH]
+c:0026 p:---- s:0112 e:000111 CFUNC  :load
+c:0025 p:0010 s:0108 e:000107 METHOD /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb:29
+c:0024 p:0203 s:0104 e:000103 METHOD /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:703
+c:0023 p:0008 s:0099 e:000098 BLOCK  /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:104
+c:0022 p:0006 s:0097 e:000096 METHOD /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:186
+c:0021 p:0009 s:0093 e:000092 METHOD /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:103
+c:0020 p:0035 s:0090 e:000089 BLOCK  /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb:22
+c:0019 p:0006 s:0088 e:000087 METHOD /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:186
+c:0018 p:0040 s:0084 e:000083 METHOD /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb:20
+c:0017 p:0173 s:0079 e:000078 METHOD /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/command.rb:48
+c:0016 p:0097 s:0069 e:000068 TOP    /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands.rb:18 [FINISH]
+c:0015 p:---- s:0065 e:000064 CFUNC  :require
+c:0014 p:0063 s:0061 e:000060 TOP    /home/whopper/Desktop/light_patch_api/bin/rails:9 [FINISH]
+c:0013 p:---- s:0058 e:000057 CFUNC  :load
+c:0012 p:0141 s:0054 e:000053 METHOD /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28
+c:0011 p:0013 s:0050 e:000049 METHOD /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/command.rb:7
+c:0010 p:0018 s:0046 e:000045 METHOD /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client.rb:30
+c:0009 p:0337 s:0041 e:000040 TOP    /var/lib/gems/2.3.0/gems/spring-2.0.2/bin/spring:49 [FINISH]
+c:0008 p:---- s:0036 e:000035 CFUNC  :load
+c:0007 p:0185 s:0032 e:000031 TOP    /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/binstub.rb:31 [FINISH]
+c:0006 p:---- s:0027 e:000026 CFUNC  :require
+c:0005 p:0174 s:0023 e:000022 METHOD /usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68
+c:0004 p:0150 s:0013 e:000012 TOP    /home/whopper/Desktop/light_patch_api/bin/spring:15 [FINISH]
+c:0003 p:---- s:0009 e:000008 CFUNC  :load
+c:0002 p:0022 s:0005 E:001b24 EVAL   bin/rails:3 [FINISH]
+c:0001 p:0000 s:0002 E:000bf8 (none) [FINISH]
+
+-- Ruby level backtrace information ----------------------------------------
+bin/rails:3:in `<main>'
+bin/rails:3:in `load'
+/home/whopper/Desktop/light_patch_api/bin/spring:15:in `<top (required)>'
+/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68:in `require'
+/usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68:in `require'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+/var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+/home/whopper/Desktop/light_patch_api/bin/rails:9:in `<top (required)>'
+/home/whopper/Desktop/light_patch_api/bin/rails:9:in `require'
+/var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands.rb:18:in `<top (required)>'
+/var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/command.rb:48:in `invoke'
+/var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb:20:in `perform'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:186:in `standard_exception_handling'
+/var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb:22:in `block in perform'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:103:in `load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:186:in `standard_exception_handling'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:104:in `block in load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb:703:in `raw_load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb:29:in `load_rakefile'
+/var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb:29:in `load'
+/home/whopper/Desktop/light_patch_api/Rakefile:4:in `<top (required)>'
+/home/whopper/Desktop/light_patch_api/Rakefile:4:in `require_relative'
+/home/whopper/Desktop/light_patch_api/config/application.rb:21:in `<top (required)>'
+/var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi.rb:12:in `configure'
+/var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/strip.rb:119:in `clear!'
+/var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/strip.rb:54:in `show!'
+/var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/apa102.rb:47:in `show!'
+/var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/spi.rb:65:in `begin'
+/var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/spi.rb:65:in `spi_begin'
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: bin/rails
+
+* Loaded features:
+
+    0 enumerator.so
+    1 thread.rb
+    2 rational.so
+    3 complex.so
+    4 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/encdb.so
+    5 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/trans/transdb.so
+    6 /usr/lib/ruby/2.3.0/unicode_normalize.rb
+    7 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/rbconfig.rb
+    8 /usr/lib/ruby/2.3.0/rubygems/compatibility.rb
+    9 /usr/lib/ruby/2.3.0/rubygems/defaults.rb
+   10 /usr/lib/ruby/2.3.0/rubygems/deprecate.rb
+   11 /usr/lib/ruby/2.3.0/rubygems/errors.rb
+   12 /usr/lib/ruby/2.3.0/rubygems/version.rb
+   13 /usr/lib/ruby/2.3.0/rubygems/requirement.rb
+   14 /usr/lib/ruby/2.3.0/rubygems/platform.rb
+   15 /usr/lib/ruby/2.3.0/rubygems/basic_specification.rb
+   16 /usr/lib/ruby/2.3.0/rubygems/stub_specification.rb
+   17 /usr/lib/ruby/2.3.0/rubygems/util/list.rb
+   18 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/stringio.so
+   19 /usr/lib/ruby/2.3.0/uri/rfc2396_parser.rb
+   20 /usr/lib/ruby/2.3.0/uri/rfc3986_parser.rb
+   21 /usr/lib/ruby/2.3.0/uri/common.rb
+   22 /usr/lib/ruby/2.3.0/uri/generic.rb
+   23 /usr/lib/ruby/2.3.0/uri/ftp.rb
+   24 /usr/lib/ruby/2.3.0/uri/http.rb
+   25 /usr/lib/ruby/2.3.0/uri/https.rb
+   26 /usr/lib/ruby/2.3.0/uri/ldap.rb
+   27 /usr/lib/ruby/2.3.0/uri/ldaps.rb
+   28 /usr/lib/ruby/2.3.0/uri/mailto.rb
+   29 /usr/lib/ruby/2.3.0/uri.rb
+   30 /usr/lib/ruby/2.3.0/rubygems/specification.rb
+   31 /usr/lib/ruby/2.3.0/rubygems/exceptions.rb
+   32 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb
+   33 /usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_gem.rb
+   34 /usr/lib/ruby/2.3.0/monitor.rb
+   35 /usr/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb
+   36 /usr/lib/ruby/2.3.0/rubygems.rb
+   37 /usr/lib/ruby/vendor_ruby/did_you_mean/version.rb
+   38 /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb
+   39 /usr/lib/ruby/vendor_ruby/did_you_mean/levenshtein.rb
+   40 /usr/lib/ruby/vendor_ruby/did_you_mean/jaro_winkler.rb
+   41 /usr/lib/ruby/vendor_ruby/did_you_mean/spell_checkable.rb
+   42 /usr/lib/ruby/2.3.0/delegate.rb
+   43 /usr/lib/ruby/vendor_ruby/did_you_mean/spell_checkers/name_error_checkers/class_name_checker.rb
+   44 /usr/lib/ruby/vendor_ruby/did_you_mean/spell_checkers/name_error_checkers/variable_name_checker.rb
+   45 /usr/lib/ruby/vendor_ruby/did_you_mean/spell_checkers/name_error_checkers.rb
+   46 /usr/lib/ruby/vendor_ruby/did_you_mean/spell_checkers/method_name_checker.rb
+   47 /usr/lib/ruby/vendor_ruby/did_you_mean/spell_checkers/null_checker.rb
+   48 /usr/lib/ruby/vendor_ruby/did_you_mean/formatter.rb
+   49 /usr/lib/ruby/vendor_ruby/did_you_mean.rb
+   50 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/etc.so
+   51 /usr/lib/ruby/2.3.0/fileutils.rb
+   52 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/pathname.so
+   53 /usr/lib/ruby/2.3.0/pathname.rb
+   54 /usr/lib/ruby/vendor_ruby/bundler/gem_path_manipulation.rb
+   55 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/socket.so
+   56 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/wait.so
+   57 /usr/lib/ruby/2.3.0/socket.rb
+   58 /usr/lib/ruby/2.3.0/timeout.rb
+   59 /usr/lib/ruby/2.3.0/net/protocol.rb
+   60 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/zlib.so
+   61 /usr/lib/ruby/2.3.0/net/http/exceptions.rb
+   62 /usr/lib/ruby/2.3.0/net/http/header.rb
+   63 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/windows_31j.so
+   64 /usr/lib/ruby/2.3.0/net/http/generic_request.rb
+   65 /usr/lib/ruby/2.3.0/net/http/request.rb
+   66 /usr/lib/ruby/2.3.0/net/http/requests.rb
+   67 /usr/lib/ruby/2.3.0/net/http/response.rb
+   68 /usr/lib/ruby/2.3.0/net/http/responses.rb
+   69 /usr/lib/ruby/2.3.0/net/http/proxy_delta.rb
+   70 /usr/lib/ruby/2.3.0/net/http/backward.rb
+   71 /usr/lib/ruby/2.3.0/net/http.rb
+   72 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/date_core.so
+   73 /usr/lib/ruby/2.3.0/date.rb
+   74 /usr/lib/ruby/2.3.0/time.rb
+   75 /usr/lib/ruby/2.3.0/rubygems/dependency.rb
+   76 /usr/lib/ruby/2.3.0/rubygems/path_support.rb
+   77 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/console.so
+   78 /usr/lib/ruby/2.3.0/rubygems/user_interaction.rb
+   79 /usr/lib/ruby/2.3.0/rubygems/request/http_pool.rb
+   80 /usr/lib/ruby/2.3.0/rubygems/request/https_pool.rb
+   81 /usr/lib/ruby/2.3.0/rubygems/request/connection_pools.rb
+   82 /usr/lib/ruby/2.3.0/rubygems/request.rb
+   83 /usr/lib/ruby/2.3.0/cgi/core.rb
+   84 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/cgi/escape.so
+   85 /usr/lib/ruby/2.3.0/cgi/util.rb
+   86 /usr/lib/ruby/2.3.0/cgi/cookie.rb
+   87 /usr/lib/ruby/2.3.0/cgi.rb
+   88 /usr/lib/ruby/2.3.0/rubygems/uri_formatter.rb
+   89 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest.so
+   90 /usr/lib/ruby/2.3.0/digest.rb
+   91 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/openssl.so
+   92 /usr/lib/ruby/2.3.0/openssl/bn.rb
+   93 /usr/lib/ruby/2.3.0/openssl/pkey.rb
+   94 /usr/lib/ruby/2.3.0/openssl/cipher.rb
+   95 /usr/lib/ruby/2.3.0/openssl/config.rb
+   96 /usr/lib/ruby/2.3.0/openssl/digest.rb
+   97 /usr/lib/ruby/2.3.0/openssl/x509.rb
+   98 /usr/lib/ruby/2.3.0/openssl/buffering.rb
+   99 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/nonblock.so
+  100 /usr/lib/ruby/2.3.0/openssl/ssl.rb
+  101 /usr/lib/ruby/2.3.0/openssl.rb
+  102 /usr/lib/ruby/2.3.0/securerandom.rb
+  103 /usr/lib/ruby/2.3.0/resolv.rb
+  104 /usr/lib/ruby/2.3.0/rubygems/remote_fetcher.rb
+  105 /usr/lib/ruby/vendor_ruby/bundler/gem_remote_fetcher.rb
+  106 /usr/lib/ruby/vendor_ruby/bundler/gem_helpers.rb
+  107 /usr/lib/ruby/vendor_ruby/bundler/match_platform.rb
+  108 /usr/lib/ruby/vendor_ruby/bundler/rubygems_ext.rb
+  109 /usr/lib/ruby/2.3.0/rubygems/config_file.rb
+  110 /usr/lib/ruby/2.3.0/rubygems/ext/build_error.rb
+  111 /usr/lib/ruby/2.3.0/rubygems/ext/builder.rb
+  112 /usr/lib/ruby/2.3.0/rubygems/ext/configure_builder.rb
+  113 /usr/lib/ruby/2.3.0/tmpdir.rb
+  114 /usr/lib/ruby/2.3.0/tempfile.rb
+  115 /usr/lib/ruby/2.3.0/rubygems/ext/ext_conf_builder.rb
+  116 /usr/lib/ruby/2.3.0/rubygems/ext/rake_builder.rb
+  117 /usr/lib/ruby/2.3.0/optparse.rb
+  118 /usr/lib/ruby/2.3.0/rubygems/command.rb
+  119 /usr/lib/ruby/2.3.0/rubygems/ext/cmake_builder.rb
+  120 /usr/lib/ruby/2.3.0/rubygems/ext.rb
+  121 /usr/lib/ruby/vendor_ruby/bundler/rubygems_integration.rb
+  122 /usr/lib/ruby/vendor_ruby/bundler/version.rb
+  123 /usr/lib/ruby/vendor_ruby/bundler/constants.rb
+  124 /usr/lib/ruby/vendor_ruby/bundler/current_ruby.rb
+  125 /usr/lib/ruby/vendor_ruby/bundler/errors.rb
+  126 /usr/lib/ruby/vendor_ruby/bundler.rb
+  127 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/strscan.so
+  128 /usr/lib/ruby/vendor_ruby/bundler/source.rb
+  129 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha1.so
+  130 /usr/lib/ruby/vendor_ruby/bundler/source/path.rb
+  131 /usr/lib/ruby/vendor_ruby/bundler/source/git.rb
+  132 /usr/lib/ruby/2.3.0/rubygems/text.rb
+  133 /usr/lib/ruby/2.3.0/rubygems/name_tuple.rb
+  134 /usr/lib/ruby/2.3.0/rubygems/spec_fetcher.rb
+  135 /usr/lib/ruby/vendor_ruby/bundler/source/rubygems.rb
+  136 /usr/lib/ruby/vendor_ruby/bundler/lockfile_parser.rb
+  137 /usr/lib/ruby/vendor_ruby/bundler/shared_helpers.rb
+  138 /usr/lib/ruby/vendor_ruby/bundler/settings.rb
+  139 /usr/lib/ruby/vendor_ruby/bundler/lazy_specification.rb
+  140 /usr/lib/ruby/vendor_ruby/bundler/dependency.rb
+  141 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/errors.rb
+  142 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/json.rb
+  143 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/md5.so
+  144 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/version.rb
+  145 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/fiddle.so
+  146 /usr/lib/ruby/2.3.0/fiddle/function.rb
+  147 /usr/lib/ruby/2.3.0/fiddle/closure.rb
+  148 /usr/lib/ruby/2.3.0/fiddle.rb
+  149 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/sid.rb
+  150 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/configuration.rb
+  151 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/env.rb
+  152 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/command.rb
+  153 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/run.rb
+  154 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/help.rb
+  155 /usr/lib/ruby/2.3.0/set.rb
+  156 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/binstub.rb
+  157 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/stop.rb
+  158 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/status.rb
+  159 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/rails.rb
+  160 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/version.rb
+  161 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client/server.rb
+  162 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/client.rb
+  163 /usr/lib/ruby/vendor_ruby/bundler/definition.rb
+  164 /usr/lib/ruby/vendor_ruby/bundler/ruby_dsl.rb
+  165 /usr/lib/ruby/vendor_ruby/bundler/dsl.rb
+  166 /usr/lib/ruby/vendor_ruby/bundler/source_list.rb
+  167 /usr/lib/ruby/2.3.0/tsort.rb
+  168 /usr/lib/ruby/2.3.0/forwardable.rb
+  169 /usr/lib/ruby/vendor_ruby/bundler/spec_set.rb
+  170 /usr/lib/ruby/vendor_ruby/bundler/environment.rb
+  171 /usr/lib/ruby/vendor_ruby/bundler/runtime.rb
+  172 /usr/lib/ruby/vendor_ruby/bundler/dep_proxy.rb
+  173 /usr/lib/ruby/vendor_ruby/bundler/index.rb
+  174 /usr/lib/ruby/vendor_ruby/bundler/remote_specification.rb
+  175 /usr/lib/ruby/vendor_ruby/bundler/stub_specification.rb
+  176 /usr/lib/ruby/vendor_ruby/bundler/endpoint_specification.rb
+  177 /usr/lib/ruby/vendor_ruby/bundler/setup.rb
+  178 /home/whopper/Desktop/light_patch_api/config/boot.rb
+  179 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/constants.rb
+  180 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/utility/engine.rb
+  181 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/abstract_object.rb
+  182 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/utility/native_extension_loader.rb
+  183 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/mri_object.rb
+  184 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/jruby_object.rb
+  185 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/rbx_object.rb
+  186 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/truffle_object.rb
+  187 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/object.rb
+  188 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/volatile.rb
+  189 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/abstract_lockable_object.rb
+  190 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/mri_lockable_object.rb
+  191 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/jruby_lockable_object.rb
+  192 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/rbx_lockable_object.rb
+  193 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/truffle_lockable_object.rb
+  194 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/lockable_object.rb
+  195 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/condition.rb
+  196 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/lock.rb
+  197 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization.rb
+  198 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/map/non_concurrent_map_backend.rb
+  199 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/map/mri_map_backend.rb
+  200 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/map.rb
+  201 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/array/prepend_and_append.rb
+  202 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/regexp.rb
+  203 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/deep_merge.rb
+  204 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/except.rb
+  205 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/slice.rb
+  206 /var/lib/gems/2.3.0/gems/i18n-1.0.1/lib/i18n/version.rb
+  207 /var/lib/gems/2.3.0/gems/i18n-1.0.1/lib/i18n/exceptions.rb
+  208 /var/lib/gems/2.3.0/gems/i18n-1.0.1/lib/i18n/interpolate/ruby.rb
+  209 /var/lib/gems/2.3.0/gems/i18n-1.0.1/lib/i18n.rb
+  210 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/lazy_load_hooks.rb
+  211 /var/lib/gems/2.3.0/gems/i18n-1.0.1/lib/i18n/config.rb
+  212 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/i18n.rb
+  213 /usr/lib/ruby/2.3.0/singleton.rb
+  214 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/kernel/singleton_class.rb
+  215 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/delegation.rb
+  216 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation/instance_delegator.rb
+  217 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/notifications/instrumenter.rb
+  218 /usr/lib/ruby/2.3.0/mutex_m.rb
+  219 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/notifications/fanout.rb
+  220 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/per_thread_registry.rb
+  221 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/notifications.rb
+  222 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation/behaviors.rb
+  223 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation/reporting.rb
+  224 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation/constant_accessor.rb
+  225 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/aliasing.rb
+  226 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/array/extract_options.rb
+  227 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation/method_wrappers.rb
+  228 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation/proxy_wrappers.rb
+  229 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/deprecation.rb
+  230 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/deprecation.rb
+  231 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/inflector/inflections.rb
+  232 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/inflections.rb
+  233 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/inflector/methods.rb
+  234 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/dependencies/autoload.rb
+  235 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/gem_version.rb
+  236 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/version.rb
+  237 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/concern.rb
+  238 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/attribute_accessors.rb
+  239 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/version.rb
+  240 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/errors.rb
+  241 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/event.rb
+  242 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/concern/dereferenceable.rb
+  243 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/concern/obligation.rb
+  244 /usr/lib/ruby/2.3.0/logger.rb
+  245 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/concern/logging.rb
+  246 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/executor_service.rb
+  247 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/utility/at_exit.rb
+  248 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/abstract_executor_service.rb
+  249 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/serial_executor_service.rb
+  250 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/immediate_executor.rb
+  251 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/delay.rb
+  252 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic_reference/concurrent_update_error.rb
+  253 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic_reference/direct_update.rb
+  254 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic_reference/numeric_cas_wrapper.rb
+  255 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic_reference/mutex_atomic.rb
+  256 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic_reference/ruby.rb
+  257 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/atomic_reference.rb
+  258 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/utility/processor_counter.rb
+  259 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/configuration.rb
+  260 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/mutex_atomic_boolean.rb
+  261 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/atomic_boolean.rb
+  262 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/utility/native_integer.rb
+  263 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/mutex_atomic_fixnum.rb
+  264 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/atomic_fixnum.rb
+  265 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/cyclic_barrier.rb
+  266 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/mutex_count_down_latch.rb
+  267 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/java_count_down_latch.rb
+  268 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/count_down_latch.rb
+  269 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/read_write_lock.rb
+  270 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/abstract_thread_local_var.rb
+  271 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
+  272 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/java_thread_local_var.rb
+  273 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/thread_local_var.rb
+  274 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/reentrant_read_write_lock.rb
+  275 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/mutex_semaphore.rb
+  276 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/semaphore.rb
+  277 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomics.rb
+  278 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_executor_service.rb
+  279 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/utility/monotonic_time.rb
+  280 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb
+  281 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/thread_pool_executor.rb
+  282 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/cached_thread_pool.rb
+  283 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/fixed_thread_pool.rb
+  284 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/simple_executor_service.rb
+  285 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/indirect_immediate_executor.rb
+  286 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/java_executor_service.rb
+  287 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/java_single_thread_executor.rb
+  288 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/java_thread_pool_executor.rb
+  289 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_single_thread_executor.rb
+  290 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/safe_task_executor.rb
+  291 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/serialized_execution.rb
+  292 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/serialized_execution_delegator.rb
+  293 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/single_thread_executor.rb
+  294 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/copy_on_write_observer_set.rb
+  295 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/copy_on_notify_observer_set.rb
+  296 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/concern/observable.rb
+  297 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/ivar.rb
+  298 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/options.rb
+  299 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/scheduled_task.rb
+  300 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/java_non_concurrent_priority_queue.rb
+  301 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/ruby_non_concurrent_priority_queue.rb
+  302 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/collection/non_concurrent_priority_queue.rb
+  303 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/timer_set.rb
+  304 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/executors.rb
+  305 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/agent.rb
+  306 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atom.rb
+  307 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/thread_safe/util.rb
+  308 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/array.rb
+  309 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/hash.rb
+  310 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/tuple.rb
+  311 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/async.rb
+  312 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/future.rb
+  313 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/dataflow.rb
+  314 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/maybe.rb
+  315 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/exchanger.rb
+  316 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/synchronization/abstract_struct.rb
+  317 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/immutable_struct.rb
+  318 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/mutable_struct.rb
+  319 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/mvar.rb
+  320 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/promise.rb
+  321 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/settable_struct.rb
+  322 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/timer_task.rb
+  323 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/tvar.rb
+  324 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent/thread_safe/synchronized_delegator.rb
+  325 /var/lib/gems/2.3.0/gems/concurrent-ruby-1.0.5/lib/concurrent.rb
+  326 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/logger_silence.rb
+  327 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/logger_thread_safe_level.rb
+  328 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/logger.rb
+  329 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_and_time/compatibility.rb
+  330 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support.rb
+  331 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/enumerable.rb
+  332 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/blank.rb
+  333 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/transform_values.rb
+  334 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/command.rb
+  335 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/core_ext/hash_with_indifferent_access.rb
+  336 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/core_ext/ordered_hash.rb
+  337 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/error.rb
+  338 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/invocation.rb
+  339 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/parser/argument.rb
+  340 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/parser/arguments.rb
+  341 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/parser/option.rb
+  342 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/parser/options.rb
+  343 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/parser.rb
+  344 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/shell.rb
+  345 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/line_editor/basic.rb
+  346 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/readline.so
+  347 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/line_editor/readline.rb
+  348 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/line_editor.rb
+  349 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/util.rb
+  350 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor/base.rb
+  351 /var/lib/gems/2.3.0/gems/thor-0.20.0/lib/thor.rb
+  352 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/command/behavior.rb
+  353 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/command.rb
+  354 /usr/lib/ruby/2.3.0/erb.rb
+  355 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/filters.rb
+  356 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/multibyte.rb
+  357 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/multibyte.rb
+  358 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/inflector/transliterate.rb
+  359 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/inflections.rb
+  360 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/command/actions.rb
+  361 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/command/base.rb
+  362 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/commands/rake/rake_command.rb
+  363 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/version.rb
+  364 /usr/lib/ruby/2.3.0/ostruct.rb
+  365 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/ext/core.rb
+  366 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/ext/string.rb
+  367 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/win32.rb
+  368 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/linked_list.rb
+  369 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/cpu_counter.rb
+  370 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/scope.rb
+  371 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/task_argument_error.rb
+  372 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rule_recursion_overflow_error.rb
+  373 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/task_manager.rb
+  374 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/cloneable.rb
+  375 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/file_utils.rb
+  376 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/file_utils_ext.rb
+  377 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/file_list.rb
+  378 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/promise.rb
+  379 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/thread_pool.rb
+  380 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/private_reader.rb
+  381 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/thread_history_display.rb
+  382 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/trace_output.rb
+  383 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/application.rb
+  384 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/rake_module.rb
+  385 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/pseudo_status.rb
+  386 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/task_arguments.rb
+  387 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/invocation_chain.rb
+  388 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/invocation_exception_mixin.rb
+  389 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/task.rb
+  390 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/early_time.rb
+  391 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/file_task.rb
+  392 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/file_creation_task.rb
+  393 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/multi_task.rb
+  394 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/dsl_definition.rb
+  395 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/default_loader.rb
+  396 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/late_time.rb
+  397 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/name_space.rb
+  398 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake/backtrace.rb
+  399 /var/lib/gems/2.3.0/gems/rake-12.3.1/lib/rake.rb
+  400 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/ruby_version_check.rb
+  401 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/kernel/reporting.rb
+  402 /usr/lib/ruby/2.3.0/psych/exception.rb
+  403 /usr/lib/ruby/2.3.0/psych/syntax_error.rb
+  404 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/psych.so
+  405 /usr/lib/ruby/2.3.0/psych/omap.rb
+  406 /usr/lib/ruby/2.3.0/psych/set.rb
+  407 /usr/lib/ruby/2.3.0/psych/class_loader.rb
+  408 /usr/lib/ruby/2.3.0/psych/scalar_scanner.rb
+  409 /usr/lib/ruby/2.3.0/psych/nodes/node.rb
+  410 /usr/lib/ruby/2.3.0/psych/nodes/stream.rb
+  411 /usr/lib/ruby/2.3.0/psych/nodes/document.rb
+  412 /usr/lib/ruby/2.3.0/psych/nodes/sequence.rb
+  413 /usr/lib/ruby/2.3.0/psych/nodes/scalar.rb
+  414 /usr/lib/ruby/2.3.0/psych/nodes/mapping.rb
+  415 /usr/lib/ruby/2.3.0/psych/nodes/alias.rb
+  416 /usr/lib/ruby/2.3.0/psych/nodes.rb
+  417 /usr/lib/ruby/2.3.0/psych/streaming.rb
+  418 /usr/lib/ruby/2.3.0/psych/visitors/visitor.rb
+  419 /usr/lib/ruby/2.3.0/psych/visitors/to_ruby.rb
+  420 /usr/lib/ruby/2.3.0/psych/visitors/emitter.rb
+  421 /usr/lib/ruby/2.3.0/psych/handler.rb
+  422 /usr/lib/ruby/2.3.0/psych/tree_builder.rb
+  423 /usr/lib/ruby/2.3.0/psych/visitors/yaml_tree.rb
+  424 /usr/lib/ruby/2.3.0/psych/json/ruby_events.rb
+  425 /usr/lib/ruby/2.3.0/psych/visitors/json_tree.rb
+  426 /usr/lib/ruby/2.3.0/psych/visitors/depth_first.rb
+  427 /usr/lib/ruby/2.3.0/psych/visitors.rb
+  428 /usr/lib/ruby/2.3.0/psych/parser.rb
+  429 /usr/lib/ruby/2.3.0/psych/coder.rb
+  430 /usr/lib/ruby/2.3.0/psych/core_ext.rb
+  431 /usr/lib/ruby/2.3.0/psych/deprecated.rb
+  432 /usr/lib/ruby/2.3.0/psych/stream.rb
+  433 /usr/lib/ruby/2.3.0/psych/json/yaml_events.rb
+  434 /usr/lib/ruby/2.3.0/psych/json/tree_builder.rb
+  435 /usr/lib/ruby/2.3.0/psych/json/stream.rb
+  436 /usr/lib/ruby/2.3.0/psych/handlers/document_stream.rb
+  437 /usr/lib/ruby/2.3.0/psych.rb
+  438 /usr/lib/ruby/2.3.0/yaml.rb
+  439 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/keys.rb
+  440 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/key_generator.rb
+  441 /usr/lib/ruby/2.3.0/base64.rb
+  442 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha2.so
+  443 /usr/lib/ruby/2.3.0/digest/sha2.rb
+  444 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/security_utils.rb
+  445 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/messages/metadata.rb
+  446 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/messages/rotator.rb
+  447 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/message_verifier.rb
+  448 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/message_encryptor.rb
+  449 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/encrypted_file.rb
+  450 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/ordered_options.rb
+  451 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/inclusion.rb
+  452 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/encrypted_configuration.rb
+  453 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/initializable.rb
+  454 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/inflector.rb
+  455 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/introspection.rb
+  456 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/railtie.rb
+  457 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/engine/railties.rb
+  458 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/engine.rb
+  459 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/strip.rb
+  460 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/secrets.rb
+  461 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/application.rb
+  462 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/gem_version.rb
+  463 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/version.rb
+  464 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/bigdecimal.so
+  465 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_time/calculations.rb
+  466 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/xml_mini/rexml.rb
+  467 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/xml_mini.rb
+  468 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/to_query.rb
+  469 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/to_param.rb
+  470 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/array/conversions.rb
+  471 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/acts_like.rb
+  472 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/duration.rb
+  473 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/ruby_core_support.rb
+  474 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/offset_rationals.rb
+  475 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/time_or_datetime.rb
+  476 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_definition.rb
+  477 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_offset.rb
+  478 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_transition.rb
+  479 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_transition_definition.rb
+  480 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_index_definition.rb
+  481 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_info.rb
+  482 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/data_timezone_info.rb
+  483 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/linked_timezone_info.rb
+  484 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/transition_data_timezone_info.rb
+  485 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/zoneinfo_timezone_info.rb
+  486 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/data_source.rb
+  487 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/ruby_data_source.rb
+  488 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/zoneinfo_data_source.rb
+  489 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_period.rb
+  490 /var/lib/gems/2.3.0/gems/thread_safe-0.3.6/lib/thread_safe/version.rb
+  491 /var/lib/gems/2.3.0/gems/thread_safe-0.3.6/lib/thread_safe/synchronized_delegator.rb
+  492 /var/lib/gems/2.3.0/gems/thread_safe-0.3.6/lib/thread_safe.rb
+  493 /var/lib/gems/2.3.0/gems/thread_safe-0.3.6/lib/thread_safe/non_concurrent_cache_backend.rb
+  494 /var/lib/gems/2.3.0/gems/thread_safe-0.3.6/lib/thread_safe/mri_cache_backend.rb
+  495 /var/lib/gems/2.3.0/gems/thread_safe-0.3.6/lib/thread_safe/cache.rb
+  496 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone.rb
+  497 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/info_timezone.rb
+  498 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/data_timezone.rb
+  499 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/linked_timezone.rb
+  500 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/timezone_proxy.rb
+  501 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/country_index_definition.rb
+  502 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/country_info.rb
+  503 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/ruby_country_info.rb
+  504 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/zoneinfo_country_info.rb
+  505 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/country.rb
+  506 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo/country_timezone.rb
+  507 /var/lib/gems/2.3.0/gems/tzinfo-1.2.5/lib/tzinfo.rb
+  508 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/values/time_zone.rb
+  509 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/time/conversions.rb
+  510 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/time_with_zone.rb
+  511 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/time/acts_like.rb
+  512 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_and_time/zones.rb
+  513 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/time/zones.rb
+  514 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/try.rb
+  515 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_and_time/calculations.rb
+  516 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date/zones.rb
+  517 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date/calculations.rb
+  518 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/time/calculations.rb
+  519 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/file_update_checker.rb
+  520 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/array/wrap.rb
+  521 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/duplicable.rb
+  522 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/deep_dup.rb
+  523 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/redefine_method.rb
+  524 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/time/compatibility.rb
+  525 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/time.rb
+  526 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date/acts_like.rb
+  527 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date/blank.rb
+  528 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date/conversions.rb
+  529 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date.rb
+  530 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_time/acts_like.rb
+  531 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_time/blank.rb
+  532 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_time/compatibility.rb
+  533 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_time/conversions.rb
+  534 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/date_time.rb
+  535 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/numeric/time.rb
+  536 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/integer/time.rb
+  537 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/conversions.rb
+  538 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/zones.rb
+  539 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/time.rb
+  540 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/reverse_merge.rb
+  541 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/conversions.rb
+  542 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/conversions.rb
+  543 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/instance_variables.rb
+  544 /usr/lib/ruby/vendor_ruby/json/version.rb
+  545 /usr/lib/ruby/vendor_ruby/json/generic_object.rb
+  546 /usr/lib/ruby/vendor_ruby/json/common.rb
+  547 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16be.so
+  548 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16le.so
+  549 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32be.so
+  550 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32le.so
+  551 /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/parser.so
+  552 /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/generator.so
+  553 /usr/lib/ruby/vendor_ruby/json/ext.rb
+  554 /usr/lib/ruby/vendor_ruby/json.rb
+  555 /usr/lib/ruby/2.3.0/bigdecimal/util.rb
+  556 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/big_decimal/conversions.rb
+  557 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/json.rb
+  558 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/option_merger.rb
+  559 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object/with_options.rb
+  560 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/object.rb
+  561 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/paths.rb
+  562 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/rack.rb
+  563 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/configuration.rb
+  564 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/railtie/configuration.rb
+  565 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/i18n_railtie.rb
+  566 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/railtie.rb
+  567 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/class/attribute.rb
+  568 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/rails.rb
+  569 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_pack/gem_version.rb
+  570 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_pack/version.rb
+  571 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_pack.rb
+  572 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack.rb
+  573 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch.rb
+  574 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/messages/rotation_configuration.rb
+  575 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/railtie.rb
+  576 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails.rb
+  577 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/gem_version.rb
+  578 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/version.rb
+  579 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model.rb
+  580 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/railtie.rb
+  581 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/array/access.rb
+  582 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/hash_with_indifferent_access.rb
+  583 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/indifferent_access.rb
+  584 /var/lib/gems/2.3.0/gems/globalid-0.4.1/lib/global_id/uri/gid.rb
+  585 /var/lib/gems/2.3.0/gems/globalid-0.4.1/lib/global_id/global_id.rb
+  586 /var/lib/gems/2.3.0/gems/globalid-0.4.1/lib/global_id.rb
+  587 /var/lib/gems/2.3.0/gems/globalid-0.4.1/lib/global_id/railtie.rb
+  588 /var/lib/gems/2.3.0/gems/activejob-5.2.0/lib/active_job/gem_version.rb
+  589 /var/lib/gems/2.3.0/gems/activejob-5.2.0/lib/active_job/version.rb
+  590 /var/lib/gems/2.3.0/gems/activejob-5.2.0/lib/active_job.rb
+  591 /var/lib/gems/2.3.0/gems/activejob-5.2.0/lib/active_job/railtie.rb
+  592 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/errors.rb
+  593 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/crud.rb
+  594 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/factory_methods.rb
+  595 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/expressions.rb
+  596 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/predications.rb
+  597 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/window_predications.rb
+  598 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/math.rb
+  599 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/alias_predication.rb
+  600 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/order_predications.rb
+  601 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/table.rb
+  602 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/attributes/attribute.rb
+  603 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/attributes.rb
+  604 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/compatibility/wheres.rb
+  605 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/visitor.rb
+  606 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/depth_first.rb
+  607 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/reduce.rb
+  608 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/to_sql.rb
+  609 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/sqlite.rb
+  610 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/postgresql.rb
+  611 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/mysql.rb
+  612 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/mssql.rb
+  613 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/oracle.rb
+  614 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/oracle12.rb
+  615 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/where_sql.rb
+  616 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/dot.rb
+  617 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/ibm_db.rb
+  618 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors/informix.rb
+  619 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/visitors.rb
+  620 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/collectors/plain_string.rb
+  621 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/collectors/sql_string.rb
+  622 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/tree_manager.rb
+  623 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/insert_manager.rb
+  624 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/select_manager.rb
+  625 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/update_manager.rb
+  626 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/delete_manager.rb
+  627 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/node.rb
+  628 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/select_statement.rb
+  629 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/select_core.rb
+  630 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/insert_statement.rb
+  631 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/update_statement.rb
+  632 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/bind_param.rb
+  633 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/terminal.rb
+  634 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/true.rb
+  635 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/false.rb
+  636 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/unary.rb
+  637 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/grouping.rb
+  638 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/ascending.rb
+  639 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/descending.rb
+  640 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/unqualified_column.rb
+  641 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/with.rb
+  642 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/binary.rb
+  643 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/equality.rb
+  644 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/in.rb
+  645 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/join_source.rb
+  646 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/delete_statement.rb
+  647 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/table_alias.rb
+  648 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/infix_operation.rb
+  649 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/unary_operation.rb
+  650 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/over.rb
+  651 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/matches.rb
+  652 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/regexp.rb
+  653 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/and.rb
+  654 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/function.rb
+  655 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/count.rb
+  656 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/extract.rb
+  657 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/values.rb
+  658 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/values_list.rb
+  659 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/named_function.rb
+  660 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/window.rb
+  661 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/case.rb
+  662 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/full_outer_join.rb
+  663 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/inner_join.rb
+  664 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/outer_join.rb
+  665 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/right_outer_join.rb
+  666 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/string_join.rb
+  667 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/sql_literal.rb
+  668 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes/casted.rb
+  669 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/nodes.rb
+  670 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel.rb
+  671 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/gem_version.rb
+  672 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/version.rb
+  673 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/attribute.rb
+  674 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/attribute_set/builder.rb
+  675 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/attribute_set/yaml_encoder.rb
+  676 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/attribute_set.rb
+  677 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/attribute_methods.rb
+  678 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/attribute_methods.rb
+  679 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/determine_if_preparable_visitor.rb
+  680 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/schema_cache.rb
+  681 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/sql_type_metadata.rb
+  682 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/hash/compact.rb
+  683 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/schema_dumper.rb
+  684 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/schema_dumper.rb
+  685 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/schema_creation.rb
+  686 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/concurrency/load_interlock_aware_monitor.rb
+  687 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/collectors/bind.rb
+  688 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/collectors/composite.rb
+  689 /var/lib/gems/2.3.0/gems/arel-9.0.0/lib/arel/collectors/substitute_binds.rb
+  690 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/descendants_tracker.rb
+  691 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/callbacks.rb
+  692 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/json/decoding.rb
+  693 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/json/encoding.rb
+  694 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/json.rb
+  695 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/access.rb
+  696 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/behavior.rb
+  697 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/multibyte/chars.rb
+  698 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/quoting.rb
+  699 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/database_statements.rb
+  700 /var/lib/gems/2.3.0/gems/activemodel-5.2.0/lib/active_model/errors.rb
+  701 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/errors.rb
+  702 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/migration.rb
+  703 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/migration/join_table.rb
+  704 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/schema_statements.rb
+  705 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/database_limits.rb
+  706 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb
+  707 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract/savepoints.rb
+  708 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/connection_adapters/abstract_adapter.rb
+  709 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/scoping.rb
+  710 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record.rb
+  711 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/abstract_controller.rb
+  712 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/filter_redirect.rb
+  713 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/cache.rb
+  714 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack/query_parser.rb
+  715 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack/utils.rb
+  716 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack/media_type.rb
+  717 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack/request.rb
+  718 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack/body_proxy.rb
+  719 /var/lib/gems/2.3.0/gems/rack-2.0.5/lib/rack/response.rb
+  720 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/response.rb
+  721 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_controller/metal/live.rb
+  722 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/rescuable.rb
+  723 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/upload.rb
+  724 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/mock_session.rb
+  725 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test/cookie_jar.rb
+  726 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test/mock_digest_request.rb
+  727 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test/utils.rb
+  728 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test/methods.rb
+  729 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test/uploaded_file.rb
+  730 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test/version.rb
+  731 /var/lib/gems/2.3.0/gems/rack-test-1.1.0/lib/rack/test.rb
+  732 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_controller/metal/strong_parameters.rb
+  733 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/load_error.rb
+  734 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/attr_internal.rb
+  735 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/name_error.rb
+  736 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/uri.rb
+  737 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_controller.rb
+  738 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/abstract_controller/railties/routes_helpers.rb
+  739 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_controller/railties/helpers.rb
+  740 /var/lib/gems/2.3.0/gems/actionview-5.2.0/lib/action_view/gem_version.rb
+  741 /var/lib/gems/2.3.0/gems/actionview-5.2.0/lib/action_view/version.rb
+  742 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/multibyte/unicode.rb
+  743 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/output_safety.rb
+  744 /var/lib/gems/2.3.0/gems/actionview-5.2.0/lib/action_view.rb
+  745 /var/lib/gems/2.3.0/gems/railties-5.2.0/lib/rails/engine/configuration.rb
+  746 /var/lib/gems/2.3.0/gems/actionview-5.2.0/lib/action_view/railtie.rb
+  747 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_controller/railtie.rb
+  748 /var/lib/gems/2.3.0/gems/activerecord-5.2.0/lib/active_record/railtie.rb
+  749 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/gem_version.rb
+  750 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/version.rb
+  751 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/errors.rb
+  752 /var/lib/gems/2.3.0/gems/marcel-0.3.2/lib/marcel.rb
+  753 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage.rb
+  754 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/downloading.rb
+  755 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/previewer.rb
+  756 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/previewer/poppler_pdf_previewer.rb
+  757 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/previewer/mupdf_previewer.rb
+  758 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/previewer/video_previewer.rb
+  759 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/analyzer.rb
+  760 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/analyzer/image_analyzer.rb
+  761 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/analyzer/video_analyzer.rb
+  762 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/routing.rb
+  763 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/router/utils.rb
+  764 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/routes.rb
+  765 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_controller/metal/exceptions.rb
+  766 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/formatter.rb
+  767 /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/racc/cparse.so
+  768 /usr/lib/ruby/2.3.0/racc/parser.rb
+  769 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/scanner.rb
+  770 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/visitors.rb
+  771 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/nodes/node.rb
+  772 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/parser_extras.rb
+  773 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/parser.rb
+  774 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/route.rb
+  775 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/path/pattern.rb
+  776 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/router.rb
+  777 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/nfa/dot.rb
+  778 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/gtg/transition_table.rb
+  779 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/gtg/builder.rb
+  780 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/gtg/simulator.rb
+  781 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/nfa/transition_table.rb
+  782 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/nfa/builder.rb
+  783 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey/nfa/simulator.rb
+  784 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/journey.rb
+  785 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/module/remove_method.rb
+  786 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/headers.rb
+  787 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/mime_negotiation.rb
+  788 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/string/starts_ends_with.rb
+  789 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/mime_types.rb
+  790 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/mime_type.rb
+  791 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/parameters.rb
+  792 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/parameter_filter.rb
+  793 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/filter_parameters.rb
+  794 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/url.rb
+  795 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/content_security_policy.rb
+  796 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/http/request.rb
+  797 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/routing/endpoint.rb
+  798 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/routing/polymorphic_routes.rb
+  799 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/routing/url_for.rb
+  800 /var/lib/gems/2.3.0/gems/actionpack-5.2.0/lib/action_dispatch/routing/route_set.rb
+  801 /var/lib/gems/2.3.0/gems/activestorage-5.2.0/lib/active_storage/engine.rb
+  802 /var/lib/gems/2.3.0/gems/actionmailer-5.2.0/lib/action_mailer/gem_version.rb
+  803 /var/lib/gems/2.3.0/gems/actionmailer-5.2.0/lib/action_mailer/version.rb
+  804 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/class/subclasses.rb
+  805 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/core_ext/class.rb
+  806 /var/lib/gems/2.3.0/gems/actionmailer-5.2.0/lib/action_mailer.rb
+  807 /var/lib/gems/2.3.0/gems/actionmailer-5.2.0/lib/action_mailer/railtie.rb
+  808 /var/lib/gems/2.3.0/gems/actioncable-5.2.0/lib/action_cable/gem_version.rb
+  809 /var/lib/gems/2.3.0/gems/actioncable-5.2.0/lib/action_cable/version.rb
+  810 /var/lib/gems/2.3.0/gems/actioncable-5.2.0/lib/action_cable.rb
+  811 /var/lib/gems/2.3.0/gems/actioncable-5.2.0/lib/action_cable/helpers/action_cable_helper.rb
+  812 /var/lib/gems/2.3.0/gems/actioncable-5.2.0/lib/action_cable/engine.rb
+  813 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/rubyeventmachine.so
+  814 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/version.rb
+  815 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/pool.rb
+  816 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/deferrable.rb
+  817 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/future.rb
+  818 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/streamer.rb
+  819 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/spawnable.rb
+  820 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/processes.rb
+  821 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/iterator.rb
+  822 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/buftok.rb
+  823 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/timers.rb
+  824 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/protocols.rb
+  825 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/connection.rb
+  826 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/callback.rb
+  827 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/queue.rb
+  828 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/channel.rb
+  829 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/file_watch.rb
+  830 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/process_watch.rb
+  831 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/tick_loop.rb
+  832 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/resolver.rb
+  833 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/completion.rb
+  834 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/em/threaded_resource.rb
+  835 /usr/lib/ruby/2.3.0/shellwords.rb
+  836 /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/eventmachine.rb
+  837 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/frequency.rb
+  838 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/pin_error.rb
+  839 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/pin_values.rb
+  840 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/stub_driver.rb
+  841 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/spi.rb
+  842 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/pin.rb
+  843 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/platform.rb
+  844 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/i2c.rb
+  845 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper.rb
+  846 /var/lib/gems/2.3.0/gems/paint-2.0.1/lib/paint/version.rb
+  847 /var/lib/gems/2.3.0/gems/paint-2.0.1/lib/paint/constants.rb
+  848 /var/lib/gems/2.3.0/gems/paint-2.0.1/lib/paint/util.rb
+  849 /var/lib/gems/2.3.0/gems/paint-2.0.1/lib/paint.rb
+  850 /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/spi_simulator.rb
+  851 /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/strip.rb
+  852 /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/apa102.rb
+  853 /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/utils.rb
+  854 /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi/version.rb
+  855 /var/lib/gems/2.3.0/gems/apa102_rbpi-1.1.1/lib/apa102_rbpi.rb
+  856 /var/lib/gems/2.3.0/gems/activesupport-5.2.0/lib/active_support/string_inquirer.rb
+  857 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg_ext.so
+  858 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/exceptions.rb
+  859 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/constants.rb
+  860 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/coder.rb
+  861 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/text_encoder.rb
+  862 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/text_decoder.rb
+  863 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/basic_type_mapping.rb
+  864 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/type_map_by_column.rb
+  865 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/connection.rb
+  866 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg/result.rb
+  867 /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg.rb
+  868 /var/lib/gems/2.3.0/gems/puma-3.12.0/lib/puma.rb
+  869 /var/lib/gems/2.3.0/gems/rack-cors-1.0.2/lib/rack/cors.rb
+  870 /var/lib/gems/2.3.0/gems/byebug-10.0.2/lib/byebug/attacher.rb
+  871 /var/lib/gems/2.3.0/gems/byebug-10.0.2/lib/byebug.rb
+  872 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/logger.rb
+  873 /usr/lib/ruby/2.3.0/English.rb
+  874 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/version.rb
+  875 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/options.rb
+  876 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/record/entry.rb
+  877 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/record/symlink_detector.rb
+  878 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/record.rb
+  879 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/file.rb
+  880 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/directory.rb
+  881 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/change.rb
+  882 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/base.rb
+  883 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/bsd.rb
+  884 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb
+  885 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/darwin.rb
+  886 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/linux.rb
+  887 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/polling.rb
+  888 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/windows.rb
+  889 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter.rb
+  890 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/adapter/config.rb
+  891 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/backend.rb
+  892 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/silencer.rb
+  893 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/silencer/controller.rb
+  894 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/queue_optimizer.rb
+  895 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/fsm.rb
+  896 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/processor.rb
+  897 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/loop.rb
+  898 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/queue.rb
+  899 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/event/config.rb
+  900 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/listener/config.rb
+  901 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen/listener.rb
+  902 /var/lib/gems/2.3.0/gems/ruby_dep-1.5.0/lib/ruby_dep/logger.rb
+  903 /var/lib/gems/2.3.0/gems/ruby_dep-1.5.0/lib/ruby_dep/ruby_version.rb
+  904 /var/lib/gems/2.3.0/gems/ruby_dep-1.5.0/lib/ruby_dep/warning.rb
+  905 /var/lib/gems/2.3.0/gems/listen-3.1.5/lib/listen.rb
+  906 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/watcher/abstract.rb
+  907 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/watcher/polling.rb
+  908 /var/lib/gems/2.3.0/gems/spring-2.0.2/lib/spring/watcher.rb
+  909 /var/lib/gems/2.3.0/gems/spring-watcher-listen-2.0.1/lib/spring/watcher/listen.rb
+  910 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi_c.so
+  911 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/platform.rb
+  912 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/types.rb
+  913 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/library.rb
+  914 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/errno.rb
+  915 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/pointer.rb
+  916 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/memorypointer.rb
+  917 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/struct_layout_builder.rb
+  918 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/struct.rb
+  919 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/union.rb
+  920 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/managedstruct.rb
+  921 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/callback.rb
+  922 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/io.rb
+  923 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/autopointer.rb
+  924 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/variadic.rb
+  925 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/enum.rb
+  926 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi/ffi.rb
+  927 /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi.rb
+  928 /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/bcm2835.rb
+
+* Process memory map:
+
+00010000-00011000 r-xp 00000000 b3:02 136189     /usr/bin/ruby2.3
+00020000-00021000 r--p 00000000 b3:02 136189     /usr/bin/ruby2.3
+00021000-00022000 rw-p 00001000 b3:02 136189     /usr/bin/ruby2.3
+0137f000-0286f000 rw-p 00000000 00:00 0          [heap]
+75b3f000-75b54000 r-xp 00000000 b3:02 394692     /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi_c.so
+75b54000-75b64000 ---p 00015000 b3:02 394692     /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi_c.so
+75b64000-75b65000 r--p 00015000 b3:02 394692     /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi_c.so
+75b65000-75b66000 rw-p 00016000 b3:02 394692     /var/lib/gems/2.3.0/gems/ffi-1.9.25/lib/ffi_c.so
+75b66000-75be3000 r-xp 00000000 b3:02 140870     /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+75be3000-75bf2000 ---p 0007d000 b3:02 140870     /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+75bf2000-75bf4000 r--p 0007c000 b3:02 140870     /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+75bf4000-75bf6000 rw-p 0007e000 b3:02 140870     /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6
+75bf6000-75c1f000 r-xp 00000000 b3:02 140593     /usr/lib/arm-linux-gnueabihf/libhx509.so.5.0.0
+75c1f000-75c2f000 ---p 00029000 b3:02 140593     /usr/lib/arm-linux-gnueabihf/libhx509.so.5.0.0
+75c2f000-75c30000 r--p 00029000 b3:02 140593     /usr/lib/arm-linux-gnueabihf/libhx509.so.5.0.0
+75c30000-75c31000 rw-p 0002a000 b3:02 140593     /usr/lib/arm-linux-gnueabihf/libhx509.so.5.0.0
+75c31000-75c32000 rw-p 00000000 00:00 0 
+75c32000-75c3a000 r-xp 00000000 b3:02 140584     /usr/lib/arm-linux-gnueabihf/libheimbase.so.1.0.0
+75c3a000-75c49000 ---p 00008000 b3:02 140584     /usr/lib/arm-linux-gnueabihf/libheimbase.so.1.0.0
+75c49000-75c4a000 r--p 00007000 b3:02 140584     /usr/lib/arm-linux-gnueabihf/libheimbase.so.1.0.0
+75c4a000-75c4b000 rw-p 00008000 b3:02 140584     /usr/lib/arm-linux-gnueabihf/libheimbase.so.1.0.0
+75c4b000-75c72000 r-xp 00000000 b3:02 140949     /usr/lib/arm-linux-gnueabihf/libwind.so.0.0.0
+75c72000-75c81000 ---p 00027000 b3:02 140949     /usr/lib/arm-linux-gnueabihf/libwind.so.0.0.0
+75c81000-75c82000 r--p 00026000 b3:02 140949     /usr/lib/arm-linux-gnueabihf/libwind.so.0.0.0
+75c82000-75c83000 rw-p 00027000 b3:02 140949     /usr/lib/arm-linux-gnueabihf/libwind.so.0.0.0
+75c83000-75ca9000 r-xp 00000000 b3:02 140586     /usr/lib/arm-linux-gnueabihf/libhogweed.so.4.2
+75ca9000-75cb9000 ---p 00026000 b3:02 140586     /usr/lib/arm-linux-gnueabihf/libhogweed.so.4.2
+75cb9000-75cba000 r--p 00026000 b3:02 140586     /usr/lib/arm-linux-gnueabihf/libhogweed.so.4.2
+75cba000-75cbb000 rw-p 00027000 b3:02 140586     /usr/lib/arm-linux-gnueabihf/libhogweed.so.4.2
+75cbb000-75ce7000 r-xp 00000000 b3:02 140717     /usr/lib/arm-linux-gnueabihf/libnettle.so.6.2
+75ce7000-75cf7000 ---p 0002c000 b3:02 140717     /usr/lib/arm-linux-gnueabihf/libnettle.so.6.2
+75cf7000-75cf8000 r--p 0002c000 b3:02 140717     /usr/lib/arm-linux-gnueabihf/libnettle.so.6.2
+75cf8000-75cf9000 rw-p 0002d000 b3:02 140717     /usr/lib/arm-linux-gnueabihf/libnettle.so.6.2
+75cf9000-75d04000 r-xp 00000000 b3:02 140887     /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.5.1
+75d04000-75d13000 ---p 0000b000 b3:02 140887     /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.5.1
+75d13000-75d14000 r--p 0000a000 b3:02 140887     /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.5.1
+75d14000-75d15000 rw-p 0000b000 b3:02 140887     /usr/lib/arm-linux-gnueabihf/libtasn1.so.6.5.1
+75d15000-75d43000 r-xp 00000000 b3:02 140603     /usr/lib/arm-linux-gnueabihf/libidn.so.11.6.15
+75d43000-75d53000 ---p 0002e000 b3:02 140603     /usr/lib/arm-linux-gnueabihf/libidn.so.11.6.15
+75d53000-75d54000 r--p 0002e000 b3:02 140603     /usr/lib/arm-linux-gnueabihf/libidn.so.11.6.15
+75d54000-75d55000 rw-p 0002f000 b3:02 140603     /usr/lib/arm-linux-gnueabihf/libidn.so.11.6.15
+75d55000-75d8a000 r-xp 00000000 b3:02 140750     /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.1.0
+75d8a000-75d9a000 ---p 00035000 b3:02 140750     /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.1.0
+75d9a000-75d9f000 r--p 00035000 b3:02 140750     /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.1.0
+75d9f000-75da0000 rw-p 0003a000 b3:02 140750     /usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.1.0
+75da0000-75dac000 r-xp 00000000 b3:02 140816     /usr/lib/arm-linux-gnueabihf/libroken.so.18.1.0
+75dac000-75dbb000 ---p 0000c000 b3:02 140816     /usr/lib/arm-linux-gnueabihf/libroken.so.18.1.0
+75dbb000-75dbc000 r--p 0000b000 b3:02 140816     /usr/lib/arm-linux-gnueabihf/libroken.so.18.1.0
+75dbc000-75dbd000 rw-p 0000c000 b3:02 140816     /usr/lib/arm-linux-gnueabihf/libroken.so.18.1.0
+75dbd000-75ddd000 r-xp 00000000 b3:02 140583     /usr/lib/arm-linux-gnueabihf/libhcrypto.so.4.1.0
+75ddd000-75ded000 ---p 00020000 b3:02 140583     /usr/lib/arm-linux-gnueabihf/libhcrypto.so.4.1.0
+75ded000-75dee000 r--p 00020000 b3:02 140583     /usr/lib/arm-linux-gnueabihf/libhcrypto.so.4.1.0
+75dee000-75def000 rw-p 00021000 b3:02 140583     /usr/lib/arm-linux-gnueabihf/libhcrypto.so.4.1.0
+75def000-75df0000 rw-p 00000000 00:00 0 
+75df0000-75e44000 r-xp 00000000 b3:02 140269     /usr/lib/arm-linux-gnueabihf/libasn1.so.8.0.0
+75e44000-75e53000 ---p 00054000 b3:02 140269     /usr/lib/arm-linux-gnueabihf/libasn1.so.8.0.0
+75e53000-75e54000 r--p 00053000 b3:02 140269     /usr/lib/arm-linux-gnueabihf/libasn1.so.8.0.0
+75e54000-75e56000 rw-p 00054000 b3:02 140269     /usr/lib/arm-linux-gnueabihf/libasn1.so.8.0.0
+75e56000-75ea3000 r-xp 00000000 b3:02 140638     /usr/lib/arm-linux-gnueabihf/libkrb5.so.26.0.0
+75ea3000-75eb2000 ---p 0004d000 b3:02 140638     /usr/lib/arm-linux-gnueabihf/libkrb5.so.26.0.0
+75eb2000-75eb3000 r--p 0004c000 b3:02 140638     /usr/lib/arm-linux-gnueabihf/libkrb5.so.26.0.0
+75eb3000-75eb5000 rw-p 0004d000 b3:02 140638     /usr/lib/arm-linux-gnueabihf/libkrb5.so.26.0.0
+75eb5000-75eba000 r-xp 00000000 b3:02 140585     /usr/lib/arm-linux-gnueabihf/libheimntlm.so.0.1.0
+75eba000-75ec9000 ---p 00005000 b3:02 140585     /usr/lib/arm-linux-gnueabihf/libheimntlm.so.0.1.0
+75ec9000-75eca000 r--p 00004000 b3:02 140585     /usr/lib/arm-linux-gnueabihf/libheimntlm.so.0.1.0
+75eca000-75ecb000 rw-p 00005000 b3:02 140585     /usr/lib/arm-linux-gnueabihf/libheimntlm.so.0.1.0
+75ecb000-75ecd000 r-xp 00000000 b3:02 415        /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+75ecd000-75edc000 ---p 00002000 b3:02 415        /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+75edc000-75edd000 r--p 00001000 b3:02 415        /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+75edd000-75ede000 rw-p 00002000 b3:02 415        /lib/arm-linux-gnueabihf/libkeyutils.so.1.5
+75ede000-75f97000 r-xp 00000000 b3:02 140530     /usr/lib/arm-linux-gnueabihf/libgnutls.so.30.6.2
+75f97000-75fa7000 ---p 000b9000 b3:02 140530     /usr/lib/arm-linux-gnueabihf/libgnutls.so.30.6.2
+75fa7000-75fad000 r--p 000b9000 b3:02 140530     /usr/lib/arm-linux-gnueabihf/libgnutls.so.30.6.2
+75fad000-75fae000 rw-p 000bf000 b3:02 140530     /usr/lib/arm-linux-gnueabihf/libgnutls.so.30.6.2
+75fae000-75faf000 rw-p 00000000 00:00 0 
+75faf000-75fd2000 r-xp 00000000 b3:02 140547     /usr/lib/arm-linux-gnueabihf/libgssapi.so.3.0.0
+75fd2000-75fe1000 ---p 00023000 b3:02 140547     /usr/lib/arm-linux-gnueabihf/libgssapi.so.3.0.0
+75fe1000-75fe2000 r--p 00022000 b3:02 140547     /usr/lib/arm-linux-gnueabihf/libgssapi.so.3.0.0
+75fe2000-75fe4000 rw-p 00023000 b3:02 140547     /usr/lib/arm-linux-gnueabihf/libgssapi.so.3.0.0
+75fe4000-75ff4000 r-xp 00000000 b3:02 140836     /usr/lib/arm-linux-gnueabihf/libsasl2.so.2.0.25
+75ff4000-76003000 ---p 00010000 b3:02 140836     /usr/lib/arm-linux-gnueabihf/libsasl2.so.2.0.25
+76003000-76004000 r--p 0000f000 b3:02 140836     /usr/lib/arm-linux-gnueabihf/libsasl2.so.2.0.25
+76004000-76005000 rw-p 00010000 b3:02 140836     /usr/lib/arm-linux-gnueabihf/libsasl2.so.2.0.25
+76005000-76012000 r-xp 00000000 b3:02 461        /lib/arm-linux-gnueabihf/libresolv-2.23.so
+76012000-76021000 ---p 0000d000 b3:02 461        /lib/arm-linux-gnueabihf/libresolv-2.23.so
+76021000-76022000 r--p 0000c000 b3:02 461        /lib/arm-linux-gnueabihf/libresolv-2.23.so
+76022000-76023000 rw-p 0000d000 b3:02 461        /lib/arm-linux-gnueabihf/libresolv-2.23.so
+76023000-76025000 rw-p 00000000 00:00 0 
+76025000-7602d000 r-xp 00000000 b3:02 140643     /usr/lib/arm-linux-gnueabihf/liblber-2.4.so.2.10.5
+7602d000-7603c000 ---p 00008000 b3:02 140643     /usr/lib/arm-linux-gnueabihf/liblber-2.4.so.2.10.5
+7603c000-7603d000 r--p 00007000 b3:02 140643     /usr/lib/arm-linux-gnueabihf/liblber-2.4.so.2.10.5
+7603d000-7603e000 rw-p 00008000 b3:02 140643     /usr/lib/arm-linux-gnueabihf/liblber-2.4.so.2.10.5
+7603e000-76044000 r-xp 00000000 b3:02 140640     /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+76044000-76053000 ---p 00006000 b3:02 140640     /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+76053000-76054000 r--p 00005000 b3:02 140640     /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+76054000-76055000 rw-p 00006000 b3:02 140640     /usr/lib/arm-linux-gnueabihf/libkrb5support.so.0.1
+76055000-76057000 r-xp 00000000 b3:02 391        /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+76057000-76066000 ---p 00002000 b3:02 391        /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+76066000-76067000 r--p 00001000 b3:02 391        /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+76067000-76068000 rw-p 00002000 b3:02 391        /lib/arm-linux-gnueabihf/libcom_err.so.2.1
+76068000-7608a000 r-xp 00000000 b3:02 140634     /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+7608a000-76099000 ---p 00022000 b3:02 140634     /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+76099000-7609a000 r--p 00021000 b3:02 140634     /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+7609a000-7609b000 rw-p 00022000 b3:02 140634     /usr/lib/arm-linux-gnueabihf/libk5crypto.so.3.1
+7609b000-76118000 r-xp 00000000 b3:02 140639     /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+76118000-76128000 ---p 0007d000 b3:02 140639     /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+76128000-7612e000 r--p 0007d000 b3:02 140639     /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+7612e000-7612f000 rw-p 00083000 b3:02 140639     /usr/lib/arm-linux-gnueabihf/libkrb5.so.3.3
+7612f000-76160000 r-xp 00000000 b3:02 140645     /usr/lib/arm-linux-gnueabihf/libldap_r-2.4.so.2.10.5
+76160000-7616f000 ---p 00031000 b3:02 140645     /usr/lib/arm-linux-gnueabihf/libldap_r-2.4.so.2.10.5
+7616f000-76170000 r--p 00030000 b3:02 140645     /usr/lib/arm-linux-gnueabihf/libldap_r-2.4.so.2.10.5
+76170000-76171000 rw-p 00031000 b3:02 140645     /usr/lib/arm-linux-gnueabihf/libldap_r-2.4.so.2.10.5
+76171000-76172000 rw-p 00000000 00:00 0 
+76172000-7619a000 r-xp 00000000 b3:02 140548     /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+7619a000-761aa000 ---p 00028000 b3:02 140548     /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+761aa000-761ab000 r--p 00028000 b3:02 140548     /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+761ab000-761ac000 rw-p 00029000 b3:02 140548     /usr/lib/arm-linux-gnueabihf/libgssapi_krb5.so.2.2
+761ac000-761c6000 r-xp 00000000 b3:02 152931     /usr/lib/arm-linux-gnueabihf/libpq.so.5.8
+761c6000-761d6000 ---p 0001a000 b3:02 152931     /usr/lib/arm-linux-gnueabihf/libpq.so.5.8
+761d6000-761d8000 r--p 0001a000 b3:02 152931     /usr/lib/arm-linux-gnueabihf/libpq.so.5.8
+761d8000-761d9000 rw-p 0001c000 b3:02 152931     /usr/lib/arm-linux-gnueabihf/libpq.so.5.8
+761d9000-761f2000 r-xp 00000000 b3:02 656792     /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg_ext.so
+761f2000-76201000 ---p 00019000 b3:02 656792     /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg_ext.so
+76201000-76202000 r--p 00018000 b3:02 656792     /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg_ext.so
+76202000-76203000 rw-p 00019000 b3:02 656792     /var/lib/gems/2.3.0/gems/pg-1.0.0/lib/pg_ext.so
+76203000-762f9000 r-xp 00000000 b3:02 140878     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.21
+762f9000-76308000 ---p 000f6000 b3:02 140878     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.21
+76308000-7630d000 r--p 000f5000 b3:02 140878     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.21
+7630d000-7630f000 rw-p 000fa000 b3:02 140878     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.21
+7630f000-76311000 rw-p 00000000 00:00 0 
+76317000-7631b000 r-xp 00000000 b3:02 393941     /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/libbcm2835.so
+7631b000-7632a000 ---p 00004000 b3:02 393941     /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/libbcm2835.so
+7632a000-7632b000 rw-p 00003000 b3:02 393941     /var/lib/gems/2.3.0/gems/pi_piper-1.9.9/lib/pi_piper/libbcm2835.so
+7632b000-76345000 r-xp 00000000 b3:02 394096     /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/rubyeventmachine.so
+76345000-76354000 ---p 0001a000 b3:02 394096     /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/rubyeventmachine.so
+76354000-76355000 r--p 00019000 b3:02 394096     /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/rubyeventmachine.so
+76355000-76356000 rw-p 0001a000 b3:02 394096     /var/lib/gems/2.3.0/gems/eventmachine-1.0.9/lib/rubyeventmachine.so
+76356000-76359000 r-xp 00000000 b3:02 52283      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/racc/cparse.so
+76359000-76368000 ---p 00003000 b3:02 52283      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/racc/cparse.so
+76368000-76369000 r--p 00002000 b3:02 52283      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/racc/cparse.so
+76369000-7636a000 rw-p 00003000 b3:02 52283      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/racc/cparse.so
+7636a000-7636f000 r-xp 00000000 b3:02 6982       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/generator.so
+7636f000-7637e000 ---p 00005000 b3:02 6982       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/generator.so
+7637e000-7637f000 r--p 00004000 b3:02 6982       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/generator.so
+7637f000-76380000 rw-p 00005000 b3:02 6982       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/generator.so
+76380000-76381000 r-xp 00000000 b3:02 52322      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32le.so
+76381000-76390000 ---p 00001000 b3:02 52322      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32le.so
+76390000-76391000 r--p 00000000 b3:02 52322      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32le.so
+76391000-76392000 rw-p 00001000 b3:02 52322      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32le.so
+76392000-76393000 r-xp 00000000 b3:02 52334      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32be.so
+76393000-763a2000 ---p 00001000 b3:02 52334      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32be.so
+763a2000-763a3000 r--p 00000000 b3:02 52334      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32be.so
+763a3000-763a4000 rw-p 00001000 b3:02 52334      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_32be.so
+763a4000-763a5000 r-xp 00000000 b3:02 52331      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16le.so
+763a5000-763b4000 ---p 00001000 b3:02 52331      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16le.so
+763b4000-763b5000 r--p 00000000 b3:02 52331      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16le.so
+763b5000-763b6000 rw-p 00001000 b3:02 52331      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16le.so
+763b6000-763b7000 r-xp 00000000 b3:02 52316      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16be.so
+763b7000-763c6000 ---p 00001000 b3:02 52316      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16be.so
+763c6000-763c7000 r--p 00000000 b3:02 52316      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16be.so
+763c7000-763c8000 rw-p 00001000 b3:02 52316      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/utf_16be.so
+763c8000-763cc000 r-xp 00000000 b3:02 6983       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/parser.so
+763cc000-763db000 ---p 00004000 b3:02 6983       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/parser.so
+763db000-763dc000 r--p 00003000 b3:02 6983       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/parser.so
+763dc000-763dd000 rw-p 00004000 b3:02 6983       /usr/lib/arm-linux-gnueabihf/ruby/vendor_ruby/2.3.0/json/ext/parser.so
+763dd000-763e8000 r-xp 00000000 b3:02 52278      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/bigdecimal.so
+763e8000-763f8000 ---p 0000b000 b3:02 52278      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/bigdecimal.so
+763f8000-763f9000 r--p 0000b000 b3:02 52278      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/bigdecimal.so
+763f9000-763fa000 rw-p 0000c000 b3:02 52278      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/bigdecimal.so
+763fa000-7640c000 r-xp 00000000 b3:02 141019     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.4
+7640c000-7641b000 ---p 00012000 b3:02 141019     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.4
+7641b000-7641c000 r--p 00011000 b3:02 141019     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.4
+7641c000-7641d000 rw-p 00012000 b3:02 141019     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.4
+76425000-76426000 r-xp 00000000 b3:02 52273      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha2.so
+76426000-76435000 ---p 00001000 b3:02 52273      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha2.so
+76435000-76436000 r--p 00000000 b3:02 52273      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha2.so
+76436000-76437000 rw-p 00001000 b3:02 52273      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha2.so
+76437000-7644f000 r-xp 00000000 b3:02 472        /lib/arm-linux-gnueabihf/libtinfo.so.5.9
+7644f000-7645e000 ---p 00018000 b3:02 472        /lib/arm-linux-gnueabihf/libtinfo.so.5.9
+7645e000-76460000 r--p 00017000 b3:02 472        /lib/arm-linux-gnueabihf/libtinfo.so.5.9
+76460000-76461000 rw-p 00019000 b3:02 472        /lib/arm-linux-gnueabihf/libtinfo.so.5.9
+76461000-76486000 r-xp 00000000 b3:02 460        /lib/arm-linux-gnueabihf/libreadline.so.6.3
+76486000-76496000 ---p 00025000 b3:02 460        /lib/arm-linux-gnueabihf/libreadline.so.6.3
+76496000-76497000 r--p 00025000 b3:02 460        /lib/arm-linux-gnueabihf/libreadline.so.6.3
+76497000-7649a000 rw-p 00026000 b3:02 460        /lib/arm-linux-gnueabihf/libreadline.so.6.3
+7649a000-7649c000 rw-p 00000000 00:00 0 
+764a1000-764a5000 r-xp 00000000 b3:02 52350      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/psych.so
+764a5000-764b4000 ---p 00004000 b3:02 52350      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/psych.so
+764b4000-764b5000 r--p 00003000 b3:02 52350      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/psych.so
+764b5000-764b6000 rw-p 00004000 b3:02 52350      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/psych.so
+764b6000-764ce000 r-xp 00000000 b3:02 404        /lib/arm-linux-gnueabihf/libgcc_s.so.1
+764ce000-764dd000 ---p 00018000 b3:02 404        /lib/arm-linux-gnueabihf/libgcc_s.so.1
+764dd000-764de000 rw-p 00017000 b3:02 404        /lib/arm-linux-gnueabihf/libgcc_s.so.1
+764de000-764e3000 r-xp 00000000 b3:02 140445     /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.4
+764e3000-764f2000 ---p 00005000 b3:02 140445     /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.4
+764f2000-764f3000 r--p 00004000 b3:02 140445     /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.4
+764f3000-764f4000 rw-p 00005000 b3:02 140445     /usr/lib/arm-linux-gnueabihf/libffi.so.6.0.4
+764f8000-764fd000 r-xp 00000000 b3:02 52342      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/readline.so
+764fd000-7650c000 ---p 00005000 b3:02 52342      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/readline.so
+7650c000-7650d000 r--p 00004000 b3:02 52342      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/readline.so
+7650d000-7650e000 rw-p 00005000 b3:02 52342      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/readline.so
+7650e000-76513000 r-xp 00000000 b3:02 52343      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/fiddle.so
+76513000-76523000 ---p 00005000 b3:02 52343      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/fiddle.so
+76523000-76524000 r--p 00005000 b3:02 52343      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/fiddle.so
+76524000-76525000 rw-p 00006000 b3:02 52343      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/fiddle.so
+76525000-76526000 r-xp 00000000 b3:02 52275      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/md5.so
+76526000-76535000 ---p 00001000 b3:02 52275      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/md5.so
+76535000-76536000 r--p 00000000 b3:02 52275      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/md5.so
+76536000-76537000 rw-p 00001000 b3:02 52275      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/md5.so
+76537000-76538000 r-xp 00000000 b3:02 52276      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha1.so
+76538000-76547000 ---p 00001000 b3:02 52276      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha1.so
+76547000-76548000 r--p 00000000 b3:02 52276      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha1.so
+76548000-76549000 rw-p 00001000 b3:02 52276      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest/sha1.so
+76549000-7654c000 r-xp 00000000 b3:02 52268      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/strscan.so
+7654c000-7655b000 ---p 00003000 b3:02 52268      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/strscan.so
+7655b000-7655c000 r--p 00002000 b3:02 52268      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/strscan.so
+7655c000-7655d000 rw-p 00003000 b3:02 52268      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/strscan.so
+7655d000-7655e000 r-xp 00000000 b3:02 52271      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/nonblock.so
+7655e000-7656d000 ---p 00001000 b3:02 52271      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/nonblock.so
+7656d000-7656e000 r--p 00000000 b3:02 52271      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/nonblock.so
+7656e000-7656f000 rw-p 00001000 b3:02 52271      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/nonblock.so
+7656f000-7666e000 r-xp 00000000 b3:02 158        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+7666e000-7667d000 ---p 000ff000 b3:02 158        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+7667d000-7668b000 r--p 000fe000 b3:02 158        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+7668b000-76692000 rw-p 0010c000 b3:02 158        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76692000-76695000 rw-p 00000000 00:00 0 
+76695000-766cb000 r-xp 00000000 b3:02 4844       /lib/arm-linux-gnueabihf/libssl.so.1.0.0
+766cb000-766db000 ---p 00036000 b3:02 4844       /lib/arm-linux-gnueabihf/libssl.so.1.0.0
+766db000-766dd000 r--p 00036000 b3:02 4844       /lib/arm-linux-gnueabihf/libssl.so.1.0.0
+766dd000-766e1000 rw-p 00038000 b3:02 4844       /lib/arm-linux-gnueabihf/libssl.so.1.0.0
+766e8000-766ea000 r-xp 00000000 b3:02 52264      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest.so
+766ea000-766f9000 ---p 00002000 b3:02 52264      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest.so
+766f9000-766fa000 r--p 00001000 b3:02 52264      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest.so
+766fa000-766fb000 rw-p 00002000 b3:02 52264      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/digest.so
+766fb000-7672d000 r-xp 00000000 b3:02 52253      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/openssl.so
+7672d000-7673d000 ---p 00032000 b3:02 52253      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/openssl.so
+7673d000-7673f000 r--p 00032000 b3:02 52253      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/openssl.so
+7673f000-76740000 rw-p 00034000 b3:02 52253      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/openssl.so
+76740000-76741000 r-xp 00000000 b3:02 52282      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/cgi/escape.so
+76741000-76750000 ---p 00001000 b3:02 52282      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/cgi/escape.so
+76750000-76751000 r--p 00000000 b3:02 52282      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/cgi/escape.so
+76751000-76752000 rw-p 00001000 b3:02 52282      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/cgi/escape.so
+76752000-76755000 r-xp 00000000 b3:02 52272      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/console.so
+76755000-76764000 ---p 00003000 b3:02 52272      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/console.so
+76764000-76765000 r--p 00002000 b3:02 52272      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/console.so
+76765000-76766000 rw-p 00003000 b3:02 52272      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/console.so
+76766000-76784000 r-xp 00000000 b3:02 52258      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/date_core.so
+76784000-76794000 ---p 0001e000 b3:02 52258      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/date_core.so
+76794000-76795000 r--p 0001e000 b3:02 52258      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/date_core.so
+76795000-76796000 rw-p 0001f000 b3:02 52258      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/date_core.so
+76796000-767a7000 r-xp 00000000 b3:02 4689       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+767a7000-767b6000 ---p 00011000 b3:02 4689       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+767b6000-767b7000 r--p 00010000 b3:02 4689       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+767b7000-767b8000 rw-p 00011000 b3:02 4689       /lib/arm-linux-gnueabihf/libz.so.1.2.8
+767bf000-767c1000 r-xp 00000000 b3:02 52321      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/windows_31j.so
+767c1000-767d0000 ---p 00002000 b3:02 52321      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/windows_31j.so
+767d0000-767d1000 r--p 00001000 b3:02 52321      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/windows_31j.so
+767d1000-767d2000 rw-p 00002000 b3:02 52321      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/windows_31j.so
+767d2000-767da000 r-xp 00000000 b3:02 52257      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/zlib.so
+767da000-767e9000 ---p 00008000 b3:02 52257      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/zlib.so
+767e9000-767ea000 r--p 00007000 b3:02 52257      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/zlib.so
+767ea000-767eb000 rw-p 00008000 b3:02 52257      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/zlib.so
+767eb000-767ec000 r-xp 00000000 b3:02 52270      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/wait.so
+767ec000-767fb000 ---p 00001000 b3:02 52270      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/wait.so
+767fb000-767fc000 r--p 00000000 b3:02 52270      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/wait.so
+767fc000-767fd000 rw-p 00001000 b3:02 52270      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/io/wait.so
+767fd000-76818000 r-xp 00000000 b3:02 52347      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/socket.so
+76818000-76828000 ---p 0001b000 b3:02 52347      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/socket.so
+76828000-76829000 r--p 0001b000 b3:02 52347      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/socket.so
+76829000-7682a000 rw-p 0001c000 b3:02 52347      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/socket.so
+7682a000-7682e000 r-xp 00000000 b3:02 52341      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/pathname.so
+7682e000-7683d000 ---p 00004000 b3:02 52341      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/pathname.so
+7683d000-7683e000 r--p 00003000 b3:02 52341      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/pathname.so
+7683e000-7683f000 rw-p 00004000 b3:02 52341      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/pathname.so
+7683f000-76843000 r-xp 00000000 b3:02 52256      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/etc.so
+76843000-76853000 ---p 00004000 b3:02 52256      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/etc.so
+76853000-76854000 r--p 00004000 b3:02 52256      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/etc.so
+76854000-76855000 rw-p 00005000 b3:02 52256      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/etc.so
+76855000-76859000 r-xp 00000000 b3:02 52255      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/stringio.so
+76859000-76868000 ---p 00004000 b3:02 52255      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/stringio.so
+76868000-76869000 r--p 00003000 b3:02 52255      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/stringio.so
+76869000-7686a000 rw-p 00004000 b3:02 52255      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/stringio.so
+7686a000-7686c000 r-xp 00000000 b3:02 52302      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/trans/transdb.so
+7686c000-7687b000 ---p 00002000 b3:02 52302      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/trans/transdb.so
+7687b000-7687c000 r--p 00001000 b3:02 52302      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/trans/transdb.so
+7687c000-7687d000 rw-p 00002000 b3:02 52302      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/trans/transdb.so
+7687d000-768fe000 rw-p 00000000 00:00 0 
+768fe000-76afe000 r--p 00000000 b3:02 145621     /usr/lib/locale/locale-archive
+76afe000-76b65000 r-xp 00000000 b3:02 419        /lib/arm-linux-gnueabihf/libm-2.23.so
+76b65000-76b74000 ---p 00067000 b3:02 419        /lib/arm-linux-gnueabihf/libm-2.23.so
+76b74000-76b75000 r--p 00066000 b3:02 419        /lib/arm-linux-gnueabihf/libm-2.23.so
+76b75000-76b76000 rw-p 00067000 b3:02 419        /lib/arm-linux-gnueabihf/libm-2.23.so
+76b76000-76b7d000 r-xp 00000000 b3:02 392        /lib/arm-linux-gnueabihf/libcrypt-2.23.so
+76b7d000-76b8c000 ---p 00007000 b3:02 392        /lib/arm-linux-gnueabihf/libcrypt-2.23.so
+76b8c000-76b8d000 r--p 00006000 b3:02 392        /lib/arm-linux-gnueabihf/libcrypt-2.23.so
+76b8d000-76b8e000 rw-p 00007000 b3:02 392        /lib/arm-linux-gnueabihf/libcrypt-2.23.so
+76b8e000-76bb5000 rw-p 00000000 00:00 0 
+76bb5000-76bb7000 r-xp 00000000 b3:02 397        /lib/arm-linux-gnueabihf/libdl-2.23.so
+76bb7000-76bc6000 ---p 00002000 b3:02 397        /lib/arm-linux-gnueabihf/libdl-2.23.so
+76bc6000-76bc7000 r--p 00001000 b3:02 397        /lib/arm-linux-gnueabihf/libdl-2.23.so
+76bc7000-76bc8000 rw-p 00002000 b3:02 397        /lib/arm-linux-gnueabihf/libdl-2.23.so
+76bc8000-76c0f000 r-xp 00000000 b3:02 140526     /usr/lib/arm-linux-gnueabihf/libgmp.so.10.3.0
+76c0f000-76c1e000 ---p 00047000 b3:02 140526     /usr/lib/arm-linux-gnueabihf/libgmp.so.10.3.0
+76c1e000-76c1f000 r--p 00046000 b3:02 140526     /usr/lib/arm-linux-gnueabihf/libgmp.so.10.3.0
+76c1f000-76c20000 rw-p 00047000 b3:02 140526     /usr/lib/arm-linux-gnueabihf/libgmp.so.10.3.0
+76c20000-76c31000 r-xp 00000000 b3:02 459        /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c31000-76c40000 ---p 00011000 b3:02 459        /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c40000-76c41000 r--p 00010000 b3:02 459        /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c41000-76c42000 rw-p 00011000 b3:02 459        /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c42000-76c44000 rw-p 00000000 00:00 0 
+76c44000-76d1a000 r-xp 00000000 b3:02 388        /lib/arm-linux-gnueabihf/libc-2.23.so
+76d1a000-76d2a000 ---p 000d6000 b3:02 388        /lib/arm-linux-gnueabihf/libc-2.23.so
+76d2a000-76d2c000 r--p 000d6000 b3:02 388        /lib/arm-linux-gnueabihf/libc-2.23.so
+76d2c000-76d2d000 rw-p 000d8000 b3:02 388        /lib/arm-linux-gnueabihf/libc-2.23.so
+76d2d000-76d30000 rw-p 00000000 00:00 0 
+76d30000-76ebe000 r-xp 00000000 b3:02 228950     /usr/lib/arm-linux-gnueabihf/libruby-2.3.so.2.3.0
+76ebe000-76ece000 ---p 0018e000 b3:02 228950     /usr/lib/arm-linux-gnueabihf/libruby-2.3.so.2.3.0
+76ece000-76ed1000 r--p 0018e000 b3:02 228950     /usr/lib/arm-linux-gnueabihf/libruby-2.3.so.2.3.0
+76ed1000-76ed2000 rw-p 00191000 b3:02 228950     /usr/lib/arm-linux-gnueabihf/libruby-2.3.so.2.3.0
+76ed2000-76ed8000 rw-p 00000000 00:00 0 
+76edf000-76ee1000 r-xp 00000000 b3:02 52292      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/encdb.so
+76ee1000-76ef0000 ---p 00002000 b3:02 52292      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/encdb.so
+76ef0000-76ef1000 r--p 00001000 b3:02 52292      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/encdb.so
+76ef1000-76ef2000 rw-p 00002000 b3:02 52292      /usr/lib/arm-linux-gnueabihf/ruby/2.3.0/enc/encdb.so
+76ef2000-76ef7000 r-xp 00000000 b3:02 140266     /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76ef7000-76f06000 ---p 00005000 b3:02 140266     /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76f06000-76f07000 rw-p 00004000 b3:02 140266     /usr/lib/arm-linux-gnueabihf/libarmmem.so
+76f07000-76f1f000 r-xp 00000000 b3:02 354        /lib/arm-linux-gnueabihf/ld-2.23.so
+76f23000-76f24000 r-xp 00000000 00:00 0 
+76f24000-76f25000 ---p 00000000 00:00 0 
+76f25000-76f28000 rwxp 00000000 00:00 0 
+76f28000-76f29000 r--p 002d4000 b3:02 145621     /usr/lib/locale/locale-archive
+76f29000-76f2e000 rw-p 00000000 00:00 0 
+76f2e000-76f2f000 r--p 00017000 b3:02 354        /lib/arm-linux-gnueabihf/ld-2.23.so
+76f2f000-76f30000 rw-p 00018000 b3:02 354        /lib/arm-linux-gnueabihf/ld-2.23.so
+7e41d000-7ec1c000 rwxp 00000000 00:00 0          [stack]
+7edc1000-7edc2000 r-xp 00000000 00:00 0          [sigpage]
+7edc2000-7edc3000 r--p 00000000 00:00 0          [vvar]
+7edc3000-7edc4000 r-xp 00000000 00:00 0          [vdso]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: http://www.ruby-lang.org/bugreport.html
+
