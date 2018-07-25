@@ -23,7 +23,7 @@ class StatesController < ApplicationController
 
   def show_color
     state = State.where(active: true).first
-    #LEDFunctions.one_color(0xf442df)
+    LEDFunctions.one_color(0xf442df)
     render json: state
   end
 
