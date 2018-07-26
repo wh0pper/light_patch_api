@@ -37,17 +37,17 @@ class StatesController < ApplicationController
   end
 
   # Actions written for testing purposes:
-  # def test_blink
-  #   state = State.where(active: true).first
-  #   LEDFunctions.blink
-  #   render json: state
-  # end
-  #
-  # def show_color
-  #   state = State.where(active: true).first
-  #   LEDFunctions.one_color(0xf442df)
-  #   render json: state
-  # end
+  def test_blink
+    state = State.where(active: true).first
+    LEDFunctions.blink
+    render json: state
+  end
+
+  def show_color
+    state = State.where(active: true).first
+    LEDFunctions.one_color(0xf442df)
+    render json: state
+  end
 
   def active_state
     state  = State.where(active: true).first ? State.where(active: true).first : State.first
