@@ -22,23 +22,15 @@ class StatesController < ApplicationController
   end
 
   def test_pink
-    if params[:color]
-      color = params[:color]
-    else
-      color = 0xf442df
-    end
+    color = 0xf442df
     state = State.where(active: true).first
     LEDFunctions.one_color(color)
     render json: state
   end
 
   def send_values
-    # binding.pry
-    if params[:color]
-      color = Integer(params[:color])
-    else
-      color = 0xf442df
-    end
+    color = params[:color] ? Integer(params[:color]) : 0xf442df
+    mode = params[:mode] ? params[:mode] : 'solid'
     state = State.where(active: true).first
     LEDFunctions.one_color(color)
     render json: state
