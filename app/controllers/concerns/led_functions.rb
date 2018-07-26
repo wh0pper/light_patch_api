@@ -1,9 +1,9 @@
 module LEDFunctions
   @@threads = []
   @strip = Apa102Rbpi.strip
+
   def self.render(color, mode)
     self.thread_check
-    # strip = Apa102Rbpi.strip
     case mode
     when 'solid'
       @strip.set_all_pixels!(color)
@@ -34,14 +34,13 @@ module LEDFunctions
 
   def self.one_color(color)
     self.thread_check
-    # strip = Apa102Rbpi.strip
     @strip.set_all_pixels!(color)
   end
 
   private
   def self.thread_check
     @@threads.each do |thread|
-      thread.exit# unless thread == Thread.current
+      thread.exit
     end
   end
 end

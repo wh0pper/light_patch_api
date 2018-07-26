@@ -32,7 +32,6 @@ class StatesController < ApplicationController
     color = params[:color] ? Integer(params[:color]) : 0xf442df
     mode = params[:mode] ? params[:mode] : 'solid'
     state = State.where(active: true).first
-  #  LEDFunctions.one_color(color)
     LEDFunctions.render(color, mode)
     render json: state
   end
