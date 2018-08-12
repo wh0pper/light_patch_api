@@ -19,7 +19,7 @@ require 'apa102_rbpi'
 Bundler.require(*Rails.groups)
 
 Apa102Rbpi.configure do |c|
-  c.num_leds = 100
+  c.num_leds = 176
   c.led_frame_rgb_offsets = {
     red: 3,
     blue: 2,
@@ -27,7 +27,7 @@ Apa102Rbpi.configure do |c|
   }
   c.brightness = 31
   c.spi_hz = 8000000
-  c.simulate = true
+  c.simulate = false
 end
 
 module LightPatchApi
