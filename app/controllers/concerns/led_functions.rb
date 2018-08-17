@@ -16,18 +16,13 @@ module LEDFunctions
           sleep 1
         end
       end
-	when 'pulse'
-	  brightness = 31
+    when 'pulse'
       @@threads << Thread.new do
         loop do
-          @strip.set_all_pixels!(color, brightness)
-          #sleep 1
-          if brightness == 0
-            direction = 1
-          elsif brightness == 31
-            direction = -1
-          end
-          brightness += direction
+          @strip.set_all_pixels!(color, 10)
+          sleep 1
+          @strip.set_all_pixels!(0)
+          sleep 1
         end
       end
     end
