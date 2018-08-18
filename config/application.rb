@@ -19,11 +19,11 @@ require 'apa102_rbpi'
 Bundler.require(*Rails.groups)
 
 Apa102Rbpi.configure do |c|
-  c.num_leds = 176
+  c.num_leds = 145
   c.led_frame_rgb_offsets = {
     red: 3,
-    blue: 2,
-    green: 1
+    blue: 1,
+    green: 2
   }
   c.brightness = 31
   c.spi_hz = 8000000
