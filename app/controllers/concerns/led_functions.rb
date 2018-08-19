@@ -18,11 +18,16 @@ module LEDFunctions
       end
     when 'pulse'
       @@threads << Thread.new do
+        max = brightness
+        current = brightness
         loop do
-          @strip.set_all_pixels!(color, 10)
-          sleep 1
-          @strip.set_all_pixels!(color, 2)
-          sleep 1
+          if current < max
+            current += 1
+          elsif current > 0
+            current -= 1
+          end
+          @strip.set_all_pixels!(color, current)
+          sleep 0.1
         end
       end
     when 'marquee'
