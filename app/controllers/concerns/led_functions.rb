@@ -25,6 +25,20 @@ module LEDFunctions
           sleep 1
         end
       end
+    when 'marquee'
+      @@threads << Thread.new do
+        i = 0
+        loop do
+          @strip.set_pixel!(i, color, brightness)
+          @strip.set_pixel!(i+1, color, brightness)
+          @strip.set_pixel!(i+2, color, brightness)
+          if i<145
+            i += 1
+          else
+            i = 0
+          end
+        end
+      end
     end
   end
 
