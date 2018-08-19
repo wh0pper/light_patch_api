@@ -31,8 +31,9 @@ class StatesController < ApplicationController
   def send_values
     color = params[:color] ? Integer(params[:color]) : 0xf442df
     mode = params[:mode] ? params[:mode] : 'solid'
+    brightness = params[:brightness] ? params[:brightness] : 31
     state = State.where(active: true).first
-    LEDFunctions.render(color, mode)
+    LEDFunctions.render(color, mode, brightness)
     render json: state
   end
 

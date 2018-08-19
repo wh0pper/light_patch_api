@@ -2,15 +2,15 @@ module LEDFunctions
   @@threads = []
   @strip = Apa102Rbpi.strip
 
-  def self.render(color, mode)
+  def self.render(color, mode, brightness)
     self.thread_check
     case mode
     when 'solid'
-      @strip.set_all_pixels!(color)
+      @strip.set_all_pixels!(color, brightness)
     when 'blink'
       @@threads << Thread.new do
         loop do
-          @strip.set_all_pixels!(color)
+          @strip.set_all_pixels!(color, brightness)
           sleep 1
           @strip.set_all_pixels!(0)
           sleep 1
@@ -21,7 +21,7 @@ module LEDFunctions
         loop do
           @strip.set_all_pixels!(color, 10)
           sleep 1
-          @strip.set_all_pixels!(0)
+          @strip.set_all_pixels!(color, 2)
           sleep 1
         end
       end
