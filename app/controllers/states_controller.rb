@@ -15,6 +15,10 @@ class StatesController < ApplicationController
     end
   end
 
+  def destroy
+    LEDFunctions.off
+  end
+
   def test_blink
     state = State.where(active: true).first
     LEDFunctions.blink

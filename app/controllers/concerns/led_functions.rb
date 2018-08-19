@@ -47,6 +47,12 @@ module LEDFunctions
     end
   end
 
+  def self.off
+    self.thread_check
+    @@threads = []
+    @strip.set_all_pixels(0)
+  end
+
   def self.blink
     self.thread_check
     @@threads << Thread.new do
