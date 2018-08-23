@@ -28,24 +28,28 @@ class StatesController < ApplicationController
   end
 
   def destroy
-    state = State.find(params[:id])
-    if state.destroy
-      render status: 204, json: {
-        message: "State removed."
-      }
-    end
+    LEDFunctions.off
   end
 
-  # Actions written for testing purposes:
   def test_blink
     state = State.where(active: true).first
     LEDFunctions.blink
     render json: state
   end
 
-  def show_color
+  def test_pink
+    color = 0xf442df
     state = State.where(active: true).first
-    LEDFunctions.one_color(0xf442df)
+    LEDFunctions.one_color(color)
+    render json: state
+  end
+
+  def send_values
+    color = params[:color] ? Integer(params[:color]) : 0xf442df
+    mode = params[:mode] ? params[:mode] : 'solid'
+    brightness = params[:brightness] ? params[:brightness] : 31
+    state = State.where(active: true).first
+    LEDFunctions.render(color, mode, brightness)
     render json: state
   end
 
